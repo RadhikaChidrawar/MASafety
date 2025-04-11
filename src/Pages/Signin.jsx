@@ -34,8 +34,11 @@ const Signin = () => {
         setError("Passwords do not match");
         return;
       }
-
-      console.log("User Registered!", { name, email, password, phone });
+      const userData = { name, email, password, phone };
+      console.log("User Registered!", userData);
+      localStorage.setItem("userData", JSON.stringify(userData));
+      console.log("user registered!!" , userData);
+      
       setState("Login");
       return;
     }
@@ -53,7 +56,15 @@ const Signin = () => {
       localStorage.setItem("userRole", "user");
       navigate("/", { state: { message: "Login successful!" } });
     }
+    const storedUser = JSON.parse(localStorage.getItem("userData"));
+  if (storedUser && storedUser.email === email && storedUser.password === password) {
+    localStorage.setItem("userRole", "user");
+    navigate("/", { state: { message: "Login successful!" } });
+  } else {
+    setError("Invalid credentials. Please try again.");
+  }
   };
+  
 
   return (
     <form
