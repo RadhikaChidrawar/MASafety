@@ -34,11 +34,35 @@ const Signin = () => {
         setError("Passwords do not match");
         return;
       }
+
+      // phone no.
+      if (!/^\d{10}$/.test(phone)) {
+        setError("Phone number must be exactly 10 digits");
+        return;
+      }
+      // email
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        setError("Please enter a valid email address");
+        return;
+      }
+      
+      // password
+      if (
+        !/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(
+          password
+        )
+      ) {
+        setError(
+          "Password must be at least 8 characters, with uppercase, lowercase, number and special character"
+        );
+        return;
+      }
+
       const userData = { name, email, password, phone };
       console.log("User Registered!", userData);
       localStorage.setItem("userData", JSON.stringify(userData));
-      console.log("user registered!!" , userData);
-      
+      console.log("user registered!!", userData);
+
       setState("Login");
       return;
     }
@@ -57,14 +81,28 @@ const Signin = () => {
       navigate("/", { state: { message: "Login successful!" } });
     }
     const storedUser = JSON.parse(localStorage.getItem("userData"));
-  if (storedUser && storedUser.email === email && storedUser.password === password) {
+    if (
+      storedUser &&
+      storedUser.email === email &&
+      storedUser.password === password
+    ) {
+      localStorage.setItem("userRole", "user");
+      navigate("/", { state: { message: "Login successful!" } });
+    } else {
+      setError("Invalid credentials. Please try again.");
+    }
+  };
+  const storedUser = JSON.parse(localStorage.getItem("userData"));
+  if (
+    storedUser &&
+    storedUser.email === email &&
+    storedUser.password === password
+  ) {
     localStorage.setItem("userRole", "user");
     navigate("/", { state: { message: "Login successful!" } });
   } else {
     setError("Invalid credentials. Please try again.");
   }
-  };
-  
 
   return (
     <form
@@ -76,7 +114,8 @@ const Signin = () => {
           {state === "Sign Up" ? "Create Account" : "Login"}
         </h2>
         <p className="text-sm mb-4 text-gray-500">
-          Please {state === "Sign Up" ? "sign up" : "log in"} to access the site.
+          Please {state === "Sign Up" ? "sign up" : "log in"} to access the
+          site.
         </p>
 
         {error && (
@@ -154,7 +193,9 @@ const Signin = () => {
         </button>
 
         <p className="text-sm mt-4 text-center">
-          {state === "Sign Up" ? "Already have an account?" : "Create a new account?"}{" "}
+          {state === "Sign Up"
+            ? "Already have an account?"
+            : "Create a new account?"}{" "}
           <span
             onClick={() => setState(state === "Sign Up" ? "Login" : "Sign Up")}
             className="text-orange-500 underline cursor-pointer hover:text-orange-700 transition"
