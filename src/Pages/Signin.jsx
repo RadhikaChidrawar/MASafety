@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Signin = () => {
-  const [state, setState] = useState("Sign Up");
+  const [state, setState] = useState("Sign Up"); // toggles between login and signup
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -12,6 +12,7 @@ const Signin = () => {
 
   const navigate = useNavigate();
 
+  // Admin credentials for login check
   const adminCredentials = {
     "adminaccount@gmail.com": {
       password: "account123",
@@ -25,28 +26,28 @@ const Signin = () => {
     },
   };
 
+  // Handle form submission
   const onSubmitHandler = (event) => {
     event.preventDefault();
     setError("");
 
+    // Sign Up flow
     if (state === "Sign Up") {
       if (password !== confirmPassword) {
         setError("Passwords do not match");
         return;
       }
 
-      // phone no.
       if (!/^\d{10}$/.test(phone)) {
         setError("Phone number must be exactly 10 digits");
         return;
       }
-      // email
+
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         setError("Please enter a valid email address");
         return;
       }
-      
-      // password
+
       if (
         !/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(
           password
@@ -58,28 +59,28 @@ const Signin = () => {
         return;
       }
 
+      // Save user in localStorage
       const userData = { name, email, password, phone };
-      console.log("User Registered!", userData);
       localStorage.setItem("userData", JSON.stringify(userData));
-      console.log("user registered!!", userData);
 
-      setState("Login");
+      console.log("User Registered!", userData);
+      setState("Login"); // Switch to login after signup
       return;
     }
 
+    // Login flow
     if (adminCredentials[email]) {
       if (password === adminCredentials[email].password) {
-        console.log(`Logged in as ${adminCredentials[email].role}`);
         localStorage.setItem("userRole", adminCredentials[email].role);
         navigate(adminCredentials[email].redirect);
+        return;
       } else {
         setError("Invalid password for admin account");
+        return;
       }
-    } else {
-      console.log("Logged in as regular user");
-      localStorage.setItem("userRole", "user");
-      navigate("/", { state: { message: "Login successful!" } });
     }
+
+    // Regular user login
     const storedUser = JSON.parse(localStorage.getItem("userData"));
     if (
       storedUser &&
@@ -92,17 +93,6 @@ const Signin = () => {
       setError("Invalid credentials. Please try again.");
     }
   };
-  const storedUser = JSON.parse(localStorage.getItem("userData"));
-  if (
-    storedUser &&
-    storedUser.email === email &&
-    storedUser.password === password
-  ) {
-    localStorage.setItem("userRole", "user");
-    navigate("/", { state: { message: "Login successful!" } });
-  } else {
-    setError("Invalid credentials. Please try again.");
-  }
 
   return (
     <form
@@ -114,8 +104,7 @@ const Signin = () => {
           {state === "Sign Up" ? "Create Account" : "Login"}
         </h2>
         <p className="text-sm mb-4 text-gray-500">
-          Please {state === "Sign Up" ? "sign up" : "log in"} to access the
-          site.
+          Please {state === "Sign Up" ? "sign up" : "log in"} to access the site.
         </p>
 
         {error && (
