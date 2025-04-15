@@ -1,6 +1,7 @@
 import React from "react";
 import blogImage1 from "../assets/blog1.png";
 import blogImage2 from "../assets/blog2.png";
+import NewspaperRoundedIcon from '@mui/icons-material/NewspaperRounded';
 
 const blogs = [
   {
@@ -32,7 +33,7 @@ export default function SafetyNews() {
         {/* Divider */}
         <div className="flex justify-center mb-10">
           <div className="w-12 h-12 text-xl rounded-full flex items-center justify-center text-orange-500">
-            ⚡
+            <NewspaperRoundedIcon fontSize="large"/>
           </div>
         </div>
 

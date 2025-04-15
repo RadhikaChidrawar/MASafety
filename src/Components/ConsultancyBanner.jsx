@@ -1,4 +1,5 @@
 import { Hand } from "lucide-react";
+import ForumIcon from '@mui/icons-material/Forum';
 
 export default function ConsultancyBanner() {
   return (
@@ -7,7 +8,7 @@ export default function ConsultancyBanner() {
         {/* Left Icon + Text */}
         <div className="flex items-center text-center md:text-left">
           <div className="w-12 h-12 flex items-center justify-center rounded-full text-orange-500 text-2xl">
-            ⚡
+          <ForumIcon/>
           </div>
           <h2 className="text-white text-lg md:text-xl font-semibold ml-3">
             Get Free Consultancy About Your Project

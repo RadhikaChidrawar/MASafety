@@ -1,6 +1,7 @@
 import service1 from "../assets/service1.jpg";
 import service2 from "../assets/service2.jpg";
 import service3 from "../assets/service3.jpg";
+import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 
 export default function ServicesSection() {
   const services = [
@@ -18,9 +19,9 @@ export default function ServicesSection() {
 
       {/* Divider with Icon */}
       <div className="flex justify-center items-center my-4">
-        <span className="w-20 h-px bg-gray-300"></span>
-        <span className="mx-2 text-orange-500 text-xl">⚡</span>
-        <span className="w-20 h-px bg-gray-300"></span>
+        <span className="w-32 h-px bg-gray-300"></span>
+        <span className="mx-2 text-orange-500 text-3xl"><HealthAndSafetyIcon fontSize="large"/></span>
+        <span className="w-32 h-px bg-gray-300"></span>
       </div>
 
       {/* Services Grid */}

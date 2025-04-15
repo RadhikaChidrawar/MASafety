@@ -1,5 +1,6 @@
 import { Star, Heart, Gem, Shield, Umbrella, Triangle } from "lucide-react";
-import workerImage from "../assets/workerImage.png"; // Replace with actual image path
+import workerImage from "../assets/workerImage.png"; 
+import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 
 export default function WhyChooseUs() {
   const features = [
@@ -18,9 +19,9 @@ export default function WhyChooseUs() {
 
       {/* Divider */}
       <div className="flex justify-center items-center my-4">
-        <span className="w-20 h-px bg-gray-300"></span>
-        <span className="mx-2 text-orange-500 text-xl">⚡</span>
-        <span className="w-20 h-px bg-gray-300"></span>
+        <span className="w-32 h-px bg-gray-300"></span>
+        <span className="mx-2 text-orange-500 text-xl"><HealthAndSafetyIcon fontSize="large"/></span>
+        <span className="w-32 h-px bg-gray-300"></span>
       </div>
 
       {/* Content Layout */}

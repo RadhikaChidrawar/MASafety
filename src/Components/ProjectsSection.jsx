@@ -8,6 +8,7 @@ import project6 from "../assets/project6.jpg";
 import project7 from "../assets/project7.jpg";
 import project8 from "../assets/project8.jpg";
 // import project9 from "../assets/project9.jpg";
+import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 
 export default function ProjectsSection() {
   const categories = ["ALL", "HOUSEHOLD", "ORGANIZATION", "RESEARCH", "SCHOOL", "SAFETY WEAR PANEL"];
@@ -57,9 +58,9 @@ export default function ProjectsSection() {
 
       {/* Divider */}
       <div className="flex justify-center items-center my-6">
-        <span className="w-20 h-px bg-gray-300"></span>
-        <span className="mx-2 text-orange-500 text-xl">⚡</span>
-        <span className="w-20 h-px bg-gray-300"></span>
+        <span className="w-80 h-px bg-gray-300"></span>
+        <span className="mx-2 text-orange-500 text-xl"><HealthAndSafetyIcon fontSize="large"/></span>
+        <span className="w-80 h-px bg-gray-300"></span>
       </div>
 
       {/* Projects Grid */}

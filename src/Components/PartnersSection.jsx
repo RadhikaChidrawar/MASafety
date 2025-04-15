@@ -3,6 +3,7 @@ import partner2 from "../assets/partner2.png";
 import partner3 from "../assets/partner3.png";
 import partner4 from "../assets/partner4.png";
 import partner5 from "../assets/partner5.png";
+import HandshakeRoundedIcon from '@mui/icons-material/HandshakeRounded';
 
 const partners = [
   { name: "Eco Light", image: partner1 },
@@ -23,7 +24,7 @@ export default function PartnersSection() {
         {/* Divider */}
         <div className="mb-8 flex justify-center">
           <div className="w-12 h-12 text-2xl rounded-full flex items-center justify-center text-orange-500">
-            ⚡
+            <HandshakeRoundedIcon fontSize="large"/>
           </div>
         </div>
 

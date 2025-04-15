@@ -1,13 +1,16 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import ConstructionIcon from '@mui/icons-material/Construction';
+import AddModeratorIcon from '@mui/icons-material/AddModerator';
+import AddHomeWorkIcon from '@mui/icons-material/AddHomeWork';
 
 const AnimatedCards = () => {
   const [clickedIndex, setClickedIndex] = useState(null); // Track which card is clicked
 
   const cards = [
-    { title: "COMMERCIAL EQUIPMENT", icon: "🔌" },
-    { title: "INNOVATION & RESEARCH", icon: "⚡" },
-    { title: "HOME APPLIANCE", icon: "🏠" },
+    { title: "COMMERCIAL EQUIPMENT", icon: <ConstructionIcon fontSize="large"/> },
+    { title: "INNOVATION & RESEARCH", icon:<AddModeratorIcon fontSize="large"/> },
+    { title: "HOME APPLIANCE", icon: <AddHomeWorkIcon fontSize="large"/> },
   ];
 
   return (

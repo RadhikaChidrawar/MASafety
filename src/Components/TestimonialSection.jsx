@@ -4,6 +4,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import clientImage from "../assets/client1.png";
 import testimonialbg from "../assets/testimonialbg.png";
+import GroupRoundedIcon from '@mui/icons-material/GroupRounded';
 
 const testimonials = [
   {
@@ -34,7 +35,7 @@ export default function TestimonialSection() {
           </h2>
           <div className="mb-4 flex items-center">
             <div className="w-10 h-10 text-xl rounded-full flex items-center justify-center text-orange-500">
-              ⚡
+              <GroupRoundedIcon fontSize="large"/>
             </div>
           </div>
 

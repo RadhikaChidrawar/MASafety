@@ -1,5 +1,6 @@
 import { FaBolt, FaCompass } from "react-icons/fa";
 import hero from "../assets/hero.mp4";
+import FlagCircleIcon from '@mui/icons-material/FlagCircle';
 
 export default function HeroSection() {
   return (
@@ -48,7 +49,7 @@ export default function HeroSection() {
             className="bg-orange-500 flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-base sm:text-lg shadow-lg 
                         hover:bg-orange-600 transition-transform transform hover:scale-105"
           >
-            <FaBolt /> Go Safe
+            < FlagCircleIcon /> Go Safe
           </button>
         </div>
       </div>

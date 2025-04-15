@@ -7,13 +7,9 @@ import { AiOutlineLogin } from "react-icons/ai";  // Sign In Icon
 import { BiShoppingBag } from "react-icons/bi";
 import { IoHome, IoLogInSharp } from "react-icons/io5";
 import { PiGithubLogoFill } from "react-icons/pi";
+// import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 
 import {
-  FaTwitter,
-  FaFacebook,
-  FaInstagram,
-  FaGoogle,
-  FaLinkedin,
   FaBars,
   FaTimes,
   FaChevronDown,
