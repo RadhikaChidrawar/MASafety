@@ -1,23 +1,24 @@
 import prod1 from './helmet.png'
 import prod2 from './google.jpeg'
-import prod3 from './earmuff.jpeg'
 import prod4 from './mask.jpeg'
 import prod5 from './gloves.jpeg'
 import prod6 from './safetyVests.jpeg'
 import prod7 from './shoes.jpeg'
 import prod8 from './protective_dress.jpeg'
-import prod9 from './safety.jpeg'
-import prod10 from './Fire_Extinguisher.jpeg'
-import prod11 from './Fire_Blanket.jpeg'
-import prod12 from './Fir_ Alarm.jpeg'
 import prod13 from './Electrical_Gloves.jpeg'
-import prod14 from './Voltage_Detector.jpeg'
-import prod15 from './Safet_net.jpeg'
-import prod16 from './traffice.jpeg'
-import prod17 from './bord.png'
-import prod18 from './Temporary_fencing.jpg'
-import prod19 from './First_Kit.jpeg'
-import prod20 from './Wash_Station.jpeg'
+import prod14 from './cloth mask.jpeg'
+import prod15 from './shoe1.png'
+import prod16 from './shoe2.png'
+import prod17 from './shoe3.png'
+import prod18 from './shoes.png'
+import prod19 from './shoes5.png'
+import prod20 from './shos6.png'
+import prod21 from './shose4.png'
+import prod22 from './shose7.png'
+import prod23 from './shose8.png'
+import prod24 from './shose9.png'
+import prod25 from './shose10.png'
+
 
 const  sampleData = [
     {
@@ -39,7 +40,7 @@ const  sampleData = [
       product_image: prod2,
     },
     {
-      product_id: 4,
+      product_id: 3,
       product_name: "Respiratory Mask (N95)",
       product_Description: "N95 mask for dust and chemical fume protection.",
       product_price: 300,
@@ -48,7 +49,7 @@ const  sampleData = [
       product_image: prod4,
     },
     {
-      product_id: 5,
+      product_id: 4,
       product_name: "Cut-Resistant Gloves",
       product_Description: "High-quality gloves for hand protection against cuts and abrasions.",
       product_price: 600,
@@ -57,7 +58,7 @@ const  sampleData = [
       product_image: prod5,
     },
     {
-      product_id: 6,
+      product_id: 5,
       product_name: "High-Visibility Vest",
       product_Description: "Reflective safety vest for improved visibility.",
       product_price: 400,
@@ -66,7 +67,7 @@ const  sampleData = [
       product_image:prod6,
     },
     {
-      product_id: 7,
+      product_id: 6,
       product_name: "Steel Toe Safety Boots",
       product_Description: "Slip-resistant, steel toe boots for foot protection.",
       product_price: 2500,
@@ -75,7 +76,7 @@ const  sampleData = [
       product_image: prod7,
     },
     {
-      product_id: 8,
+      product_id: 7,
       product_name: "Protective Coveralls",
       product_Description: "Full-body coveralls for chemical and dust protection.",
       product_price: 1800,
@@ -84,7 +85,7 @@ const  sampleData = [
       product_image: prod8,
     },
     {
-      product_id: 13,
+      product_id: 8,
       product_name: "Insulated Electrical Gloves",
       product_Description: "Shock-resistant gloves for electrical safety.",
       product_price: 1500,
@@ -92,6 +93,115 @@ const  sampleData = [
       delivery_time: "3-6 Days",
       product_image: prod13,
     },
+    {
+      product_id: 9,
+      product_name: "Cloth Nose Mask",
+      product_Description: "Reusable and breathable cloth mask for daily protection against dust and pollutants.",
+      product_price: 150,
+      product_star: 4.2,
+      delivery_time: "3-5 Days",
+      product_image: prod14,
+    },
+    {
+      product_id: 10,
+      product_name: "Disposable Apron",
+      product_Description: "Lightweight, waterproof disposable apron ideal for hygiene and safety in medical and kitchen use.",
+      product_price: 250,
+      product_star: 4.0,
+      delivery_time: "2-4 Days",
+      product_image: prod15,
+    },  
+    {
+      product_id: 11,
+      product_name: "Crazy Horse Brown Leather Shoes (2727)",
+      product_Description: "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
+      product_price: 1750,
+      product_star: 4.5,
+      delivery_time: "3-5 Days",
+      product_image: prod16,
+    },
+    {
+      product_id: 12,
+      product_name: "Crazy Horse Green Leather Shoes (2728)",
+      product_Description: "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
+      product_price: 1800,
+      product_star: 4.4,
+      delivery_time: "3-5 Days",
+      product_image: prod17,
+    },
+    {
+      product_id: 13,
+      product_name: "Buff Barton Leather Shoes - Electrical (602 E)",
+      product_Description: "11 KVA electrical resistance, single density, anti-static, slip resistant, ISI Part-3, ISO 9001:2015 & CE certified.",
+      product_price: 1650,
+      product_star: 4.3,
+      delivery_time: "2-4 Days",
+      product_image: prod18,
+    },
+    {
+      product_id: 14,
+      product_name: "Buff Barton Leather Shoes - Nitrile Sole (602 N)",
+      product_Description: "Steel toe 200J, single density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
+      product_price: 1700,
+      product_star: 4.4,
+      delivery_time: "2-4 Days",
+      product_image: prod19,
+    },
+    {
+      product_id: 15,
+      product_name: "Buff Barton Leather Shoes (701)",
+      product_Description: "Steel toe 140J, single density, anti-static, slip resistant, ISI Part-3, ISO 9001:2015 & CE certified.",
+      product_price: 1600,
+      product_star: 4.1,
+      delivery_time: "3-5 Days",
+      product_image: prod20,
+    },
+    {
+      product_id: 16,
+      product_name: "Buff Barton Leather Shoes (2201)",
+      product_Description: "Steel toe cap 140 joules, single density, anti-static, slip resistant, ISI Part-3, ISO 9001:2015 & CE certified.",
+      product_price: 1580,
+      product_star: 4.2,
+      delivery_time: "3-5 Days",
+      product_image: prod21,
+    },
+    {
+      product_id: 17,
+      product_name: "Grain Tango Leather Shoes (2450)",
+      product_Description: "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
+      product_price: 1650,
+      product_star: 4.3,
+      delivery_time: "2-4 Days",
+      product_image: prod22,
+    },
+    {
+      product_id: 18,
+      product_name: "Buff Barton Leather Shoes (2453)",
+      product_Description: "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
+      product_price: 1680,
+      product_star: 4.4,
+      delivery_time: "2-4 Days",
+      product_image: prod23,
+    },
+    {
+      product_id: 19,
+      product_name: "Grain Tango Brown Leather Shoes (2602)",
+      product_Description: "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
+      product_price: 1700,
+      product_star: 4.4,
+      delivery_time: "3-5 Days",
+      product_image: prod24,
+    },
+    {
+      product_id: 20,
+      product_name: "C.G Leather Shoes (2610)",
+      product_Description: "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
+      product_price: 1680,
+      product_star: 4.3,
+      delivery_time: "3-5 Days",
+      product_image: prod25,
+    }
+      
     
   ];
   
