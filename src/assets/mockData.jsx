@@ -200,6 +200,15 @@ const  sampleData = [
       product_star: 4.3,
       delivery_time: "3-5 Days",
       product_image: prod25,
+    },
+    {
+      product_id: 21,
+      product_name: "C.G Leather Shoes (2610)",
+      product_Description: "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
+      product_price: 1680,
+      product_star: 4.3,
+      delivery_time: "3-5 Days",
+      product_image: prod23,
     }
       
     
