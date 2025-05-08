@@ -128,7 +128,7 @@ const sampleData = [
     product_price: 1750,
     product_star: 4.5,
     delivery_time: "3-5 Days",
-    product_image: prod16,
+    product_image: prod20,
   },
   {
     product_id: 12,
