@@ -43,7 +43,7 @@ const ProductCart = ({ product }) => {
           ))}
       </div>
 
-      <p className="text-gray-800 font-bold mb-2">₹{product.product_price}</p>
+      {/* <p className="text-gray-800 font-bold mb-2">₹{product.product_price}</p> */}
 
       {/* Add to Cart Button */}
       <div
@@ -52,7 +52,7 @@ const ProductCart = ({ product }) => {
       >
         <span className="group-hover:hidden">+</span>
         <span className="hidden group-hover:block text-xs sm:text-sm">
-          Add to cart
+          Add Bulk Order
         </span>
       </div>
     </div>

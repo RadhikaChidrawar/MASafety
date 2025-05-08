@@ -6,6 +6,7 @@ import {
   decressQuentity,
   incressQuentity,
   removeFromCart,
+  updateQuantity
 } from "../redux/cartSlice";
 import { useNavigate } from "react-router-dom";
 
@@ -55,7 +56,7 @@ function Buynow() {
                     <div className="flex items-center justify-between w-full md:w-3/5 gap-4 text-sm">
                       <p>₹{product.product_price}</p>
 
-                      <div className="flex items-center border rounded">
+                      {/* <div className="flex items-center border rounded">
                         <button
                           className="px-2 font-bold border-r"
                           onClick={() =>
@@ -73,7 +74,23 @@ function Buynow() {
                         >
                           +
                         </button>
-                      </div>
+                      </div> */}
+
+                      {/* custom quentity */}
+                      <input
+                        type="number"
+                        min="1"
+                        value={product.quantity}
+                        onChange={(e) =>
+                          dispatch(
+                            updateQuantity({
+                              product_id: product.product_id,
+                              quantity: parseInt(e.target.value),
+                            })
+                          )
+                        }
+                        className="w-16 text-center border rounded px-2 py-1"
+                      />
 
                       <p>
                         ₹{(product.quantity * product.product_price).toFixed(2)}

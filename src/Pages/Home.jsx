@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
-      <AboutSection />
+      {/* <AboutSection /> */}
       <AnimatedCards />
       <ServicesSection />
       <ProjectsSection />
@@ -25,8 +25,8 @@ export default function Home() {
       <StatsSection />
       <ProductCarousel />
       <TeamSection />
-      <PartnersSection />
-      <TestimonialSection />
+      {/* <PartnersSection /> */}
+      {/* <TestimonialSection /> */}
       <SafetyNews />
     </div>
   );

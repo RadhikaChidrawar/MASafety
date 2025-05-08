@@ -1,12 +1,4 @@
-import {
-  FaPhoneAlt,
-  FaEnvelope,
-  FaMapMarkerAlt,
-  FaTwitter,
-  FaFacebookF,
-  FaLinkedinIn,
-  FaGooglePlusG,
-} from "react-icons/fa";
+import { IoCall } from "react-icons/io5";
 import bgImage from "../assets/footerbg.png";
 
 export default function Footer() {
@@ -24,28 +16,68 @@ export default function Footer() {
         <div className="w-full flex flex-row gap-4 md:gap-12 lg:gap-16">
           {/* Product Section */}
           <div className="w-1/2">
-            <h3 className="font-bold text-lg md:text-xl mb-3 md:mb-5 text-black border-b border-gray-300 pb-2">Product</h3>
+            <h3 className="font-bold text-lg md:text-xl mb-3 md:mb-5 text-black border-b border-gray-300 pb-2">
+              Product
+            </h3>
             <ul className="space-y-2 md:space-y-3 text-sm md:text-base text-gray-900">
-              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">About Us</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">Contact Us</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">FAQs</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">Terms & Conditions</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">Legal Notice</li>
+              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
+                About Us
+              </li>
+              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
+                Contact Us
+              </li>
+              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
+                FAQs
+              </li>
+              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
+                Terms & Conditions
+              </li>
+              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
+                Legal Notice
+              </li>
             </ul>
-            <button className="mt-4 md:mt-6 px-4 md:px-6 py-2 bg-orange-500 text-white rounded-md text-sm hover:bg-orange-600 transition-colors duration-200 shadow-md">
+            {/* <button className="mt-4 md:mt-6 px-4 md:px-6 py-2 bg-orange-500 text-white rounded-md text-sm hover:bg-orange-600 transition-colors duration-200 shadow-md">
               Buy Now
             </button>
+            <button className="mt-4 md:mt-6 px-4 md:px-6  py-2 bg-orange-500 text-white rounded-md text-sm hover:bg-orange-600 transition-colors duration-200 shadow-md">
+              call Now : 9545261030
+            </button> */}
+
+            <div className="mt-4 md:mt-6 flex flex-col md:flex-row gap-4">
+              <button className="px-4 md:px-6 py-2 bg-orange-500 text-white rounded-md text-sm hover:bg-orange-600 transition-colors duration-200 shadow-md">
+                Buy Now
+              </button>
+
+              <button 
+                className="flex items-center gap-2 px-4 md:px-6 py-2 bg-orange-500 text-white rounded-md text-sm hover:bg-orange-600 transition-colors duration-200 shadow-md"
+              >
+                <IoCall className="w-5 h-5" />
+                 +91 9545261030 / +91 8922930360
+              </button>
+            </div>
           </div>
 
           {/* Your Account Section */}
           <div className="w-1/2">
-            <h3 className="font-bold text-lg md:text-xl mb-3 md:mb-5 text-black border-b border-gray-300 pb-2">Your Account</h3>
+            <h3 className="font-bold text-lg md:text-xl mb-3 md:mb-5 text-black border-b border-gray-300 pb-2">
+              Your Account
+            </h3>
             <ul className="space-y-2 md:space-y-3 text-sm md:text-base text-gray-900">
-              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">Delivery</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">Wishlist</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">Blog Page</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">Search</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">Contact Us</li>
+              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
+                Delivery
+              </li>
+              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
+                Wishlist
+              </li>
+              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
+                Blog Page
+              </li>
+              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
+                Search
+              </li>
+              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
+                Contact Us
+              </li>
             </ul>
           </div>
         </div>
@@ -54,7 +86,9 @@ export default function Footer() {
         <div className="mt-8 md:mt-12 pt-6 border-t border-gray-300">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
             <div className="w-full md:w-1/2">
-              <h4 className="font-bold text-gray-900 mb-2">Subscribe to our newsletter</h4>
+              <h4 className="font-bold text-gray-900 mb-2">
+                Subscribe to our newsletter
+              </h4>
               <div className="flex">
                 <input
                   type="email"

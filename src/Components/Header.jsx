@@ -7,8 +7,6 @@ import { AiOutlineLogin } from "react-icons/ai";  // Sign In Icon
 import { BiShoppingBag } from "react-icons/bi";
 import { IoHome, IoLogInSharp } from "react-icons/io5";
 import { PiGithubLogoFill } from "react-icons/pi";
-// import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
-
 import {
   FaBars,
   FaTimes,
@@ -177,9 +175,6 @@ export default function Header() {
         <Link to="/projects" className="hover:text-orange-400 transition-all duration-300">
           Projects
         </Link>
-        <Link to="/team" className="hover:text-orange-400 transition-all duration-300">
-          Team
-        </Link>
         <Link to="/contact" className="hover:text-orange-400 transition-all duration-300">
           Contact
         </Link>
@@ -345,13 +340,6 @@ export default function Header() {
             onClick={() => setMenuOpen(false)}
           >
             <GrProjects /> Projects
-          </Link>
-          <Link
-            to="/team"
-            className="flex items-center gap-2 text-white hover:text-orange-400 transition-all duration-300 py-2"
-            onClick={() => setMenuOpen(false)}
-          >
-            <RiTeamFill /> Team
           </Link>
           <Link
             to="/contact"

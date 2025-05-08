@@ -1,76 +1,4 @@
-// import {createSlice} from '@reduxjs/toolkit'
-
-// const initialState = {
-//     products : [],
-//     totalQuantity :0,
-//     totalPrice:0,
-// }
-
-// const cartSlice = createSlice({
-//     name :"cart",
-//     initialState,
-//     reducers :{
-//         addToCart(state, action){
-//             const newItem = action.payload;
-//             const itemIndex = state.products.find((item)=> item.id === newItem.id)
-//             if(itemIndex){
-//                 itemIndex.quantity++;
-//                 itemIndex.totalPrice += newItem.price
-//             }else{
-//                 state.products.push({
-//                     id: newItem.id,
-//                     name: newItem.name,
-//                     price: newItem.price,
-//                     quantity: 1,
-//                     totalPrice: newItem.price,
-//                     image : newItem.image
-//                 })
-//             }
-//             // state.totalQuantity += newItem.price;
-//             state.totalPrice += newItem.price;
-//             state.totalQuantity ++;
-//         },
-//         removeFromCart(state, action) {
-//             const id = action.payload;
-//             const findItem = state.products.find((item) => item.id === id);
-//             if (findItem) {
-//                 state.totalPrice -= findItem.totalPrice;
-//                 state.totalQuantity -= findItem.quantity; 
-//                 state.products = state.products.filter(item => item.id !== id); 
-//             }
-//         },
-//         incressQuentity(state, action){
-//             const id = action.payload;
-//             const findItem = state.products.find((item) => item.id === id);
-//             if(findItem){
-//                 findItem.quantity++;
-//                 findItem.totalPrice += findItem.price
-//                 state.totalQuantity ++;
-//                 state.totalPrice += findItem.price
-//             }
-//         },
-//         decressQuentity(state, action){
-//             const id = action.payload;
-//             const findItem = state.products.find((item) => item.id === id);
-//             if(findItem.quantity > 1){
-//                 if(findItem){
-//                     findItem.quantity--;
-//                     findItem.totalPrice -= findItem.price
-//                     state.totalQuantity --;
-//                     state.totalPrice -= findItem.price
-//                 }
-//             }
-//         },
-//     },
-    
-// })
-
-// export const {setProducts} = cartSlice.actions;
-// export const {addToCart ,  removeFromCart , incressQuentity ,decressQuentity} = cartSlice.actions;
-// export default cartSlice.reducer;
-
-
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   products: [],
@@ -79,16 +7,18 @@ const initialState = {
 };
 
 const cartSlice = createSlice({
-  name: 'cart',
+  name: "cart",
   initialState,
   reducers: {
     addToCart(state, action) {
       const newItem = action.payload;
-      const itemIndex = state.products.find((item) => item.product_id === newItem.product_id);
+      const existingItem = state.products.find(
+        (item) => item.product_id === newItem.product_id
+      );
 
-      if (itemIndex) {
-        itemIndex.quantity++;
-        itemIndex.totalPrice += newItem.product_price;
+      if (existingItem) {
+        existingItem.quantity++;
+        existingItem.totalPrice += newItem.product_price;
       } else {
         state.products.push({
           product_id: newItem.product_id,
@@ -113,7 +43,9 @@ const cartSlice = createSlice({
       if (findItem) {
         state.totalPrice -= findItem.totalPrice;
         state.totalQuantity -= findItem.quantity;
-        state.products = state.products.filter((item) => item.product_id !== id);
+        state.products = state.products.filter(
+          (item) => item.product_id !== id
+        );
       }
     },
 
@@ -138,6 +70,23 @@ const cartSlice = createSlice({
         state.totalPrice -= findItem.product_price;
       }
     },
+    // add custom quentity
+    updateQuantity: (state, action) => {
+      const { product_id, quantity } = action.payload;
+      const item = state.products.find((p) => p.product_id === product_id);
+      if (item && quantity > 0) {
+        item.quantity = quantity;
+      }
+      // Update totals
+      state.totalQuantity = state.products.reduce(
+        (acc, p) => acc + p.quantity,
+        0
+      );
+      state.totalPrice = state.products.reduce(
+        (acc, p) => acc + p.quantity * p.product_price,
+        0
+      );
+    },
   },
 });
 
@@ -146,6 +95,7 @@ export const {
   removeFromCart,
   incressQuentity,
   decressQuentity,
+  updateQuantity,
 } = cartSlice.actions;
 
 export default cartSlice.reducer;
