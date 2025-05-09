@@ -8,7 +8,7 @@ import prod8 from "./protective_dress.jpeg";
 import prod13 from "./Electrical_Gloves.jpeg";
 import prod14 from "./cloth mask.jpeg";
 import prod15 from "./Shoe1.png";
-import prod16 from "./shoe2.png";
+// import prod16 from "./shoe2.png";
 import prod17 from "./Shoe3.png";
 import prod18 from "./shoes.png";
 import prod19 from "./shoes5.png";
@@ -22,6 +22,49 @@ import prod25 from "./shose10.png";
 import blog1 from "./download (1).png";
 import blog2 from "./LSRs.png";
 import blog3 from "./images (3).jpeg";
+
+import d1 from './d1.jpeg';
+import d2 from './d2.jpeg';
+import d3 from './d3.jpeg';
+import d4 from './d4.jpeg';
+import d5 from './d5.jpeg';
+import d6 from './d6.png';
+import d7 from './d7.png';
+import d8 from './d8.png';
+
+import c1 from './c1.png';
+import c2 from './c2.png';
+
+import h1 from './h1.png';
+import h2 from './h2.png';
+import h3 from './h3.png';
+import h4 from './h4.png';
+import h5 from './h5.jpg';
+import h6 from './h6.png';
+
+import n1 from './n1.png';
+import n2 from './n2.png';
+import n3 from './n3.png';
+import n4 from './n5.png';
+import n5 from './n6.jpg';
+
+import r1 from './r1.png';
+import r2 from './r2.jpg';
+import r3 from './r3.jpg';
+import r4 from './r4.jpg';
+
+import s1 from './s1.png';
+import s2 from './s3.png';
+import s3 from './s4.png';
+import s4 from './s5.png';
+import s5 from './s6.png';
+
+import sc1 from './sc1.png';
+import sc2 from './sc2.jpg';
+import sc3 from './sc3.png';
+import sc4 from './sc4.png';
+import sc5 from './ss3.png';
+
 
 const sampleData = [
   {
@@ -220,16 +263,16 @@ const sampleData = [
     delivery_time: "3-5 Days",
     product_image: prod25,
   },
-  // {
-  //   product_id: 21,
-  //   product_name: "C.G Leather Shoes (2610)",
-  //   product_Description:
-  //     "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
-  //   product_price: 1680,
-  //   product_star: 4.3,
-  //   delivery_time: "3-5 Days",
-  //   product_image: prod23,
-  // },
+  {
+    product_id: 21,
+    product_name: "C.G Leather Shoes (2610)",
+    product_Description:
+      "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
+    product_price: 1680,
+    product_star: 4.3,
+    delivery_time: "3-5 Days",
+    product_image: prod23,
+  },
 ];
 
 export default sampleData;
@@ -308,3 +351,269 @@ export const blogs = [
 
   },
 ];
+
+export const denimShirt=[
+  {
+    product_id:101,
+    product_name :"Heavy-Duty Denim Work Shirt",
+    product_Description: "Durable and breathable denim shirt, ideal for workers in manufacturing units. Designed for long shifts and heavy-duty environments.",
+    product_image: d1 ,
+    product_price :300,
+  }, 
+  {
+    product_id:102,
+    product_name :"Industrial Safety Denim Shirt",
+    product_Description: "Engineered for comfort and safety, this denim shirt offers sturdy protection and flexibility for factory and machine operators.",
+    product_image : d2 ,
+    product_price : 350,
+  }, 
+  {
+    product_id:103,
+    product_name :"Classic Blue Denim Workwear",
+    product_Description: "A timeless blue denim shirt perfect for workers handling machinery and tools in industrial settings.",
+    product_image : d3 ,
+    product_price : 280,
+  }, 
+  {
+    product_id:104,
+    product_name :"Reinforced Stitch Worker Shirt",
+    product_Description: "Features reinforced seams and thick denim material. Ideal for rugged use in warehouses and workshops.",
+    product_image : d4 ,
+    product_price:400,
+  }, 
+  {
+    product_id:105,
+    product_name :"Heavy-Duty Denim Work Shirt",
+    product_Description: "Durable and breathable denim shirt, ideal for workers in manufacturing units. Designed for long shifts and heavy-duty environments.",
+    product_image: d5 ,
+    product_price :300,
+  }, 
+  {
+    product_id:106,
+    product_name :"Industrial Safety Denim Shirt",
+    product_Description: "Engineered for comfort and safety, this denim shirt offers sturdy protection and flexibility for factory and machine operators.",
+    product_image : d6 ,
+    product_price : 350,
+  }, 
+  {
+    product_id:107,
+    product_name :"Classic Blue Denim Workwear",
+    product_Description: "A timeless blue denim shirt perfect for workers handling machinery and tools in industrial settings.",
+    product_image : d7 ,
+    product_price : 280,
+  }, 
+  {
+    product_id:108,
+    product_name :"Reinforced Stitch Worker Shirt",
+    product_Description: "Features reinforced seams and thick denim material. Ideal for rugged use in warehouses and workshops.",
+    product_image : d8 ,
+    product_price:400,
+  }, 
+];
+
+export const corp =[
+  {
+    product_id:201,
+    product_name :"Corporate woman Shirt",
+    product_Description: "A professional and polished outfit designed for business environments. Features a tailored black suit with a white shirt, paired with formal footwear for a sophisticated look. Ideal for offices, meetings, and corporate events. ",
+    product_image: c1 ,
+    product_price :300,
+  }, 
+  {
+    product_id:202,
+    product_name :"corporate man Work Shirt",
+    product_Description: "professional and polished outfit designed for business environments. Features a tailored dark blue suit with a white dress shirt, a dark tie, and brown dress shoes for a sophisticated look. Ideal for offices, meetings, and corporate events. ",
+    product_image: c2 ,
+    product_price :300,
+  }, 
+];
+
+export const health =[
+  {
+    product_id:301,
+    product_name :"Two-piece medical scrub ",
+    product_Description: "comfortable and functional two-piece medical set with a V-neck top and drawstring pants. Made from breathable, lightweight fabrics for ease of movement during long shifts. Includes multiple pockets for carrying essentials.",
+    product_image: h1 ,
+    product_price :300,
+  },
+  {
+    product_id:302,
+    product_name :"Classic green V-neck scrub ",
+    product_Description: "TopDesigned for medical professionals, offering comfort and durability for extended wear. Features two front pockets for easy storage. ",
+    product_image: h2 ,
+    product_price :500,
+  },
+  {
+    product_id:303,
+    product_name :"White Lab Coat ",
+    product_Description: "Coat A professional, breathable coat designed for healthcare professionals. Tailored fit with a front button closure, structured collar, and side pockets for essential tools. Ideal for hospitals, clinics, and research facilities. ",
+    product_image: h3 ,
+    product_price :200,
+  },
+  {
+    product_id:304,
+    product_name :"medical scrub",
+    product_Description: "Set A modern, fitted scrub set designed for healthcare professionals in high-mobility environments.Features utility pockets, zip/snap closure, and jogger-style pants with deep side pockets. Paired with white gloves and athletic shoes for extended wear. ",
+    product_image: h4 ,
+    product_price :300,
+  },
+  {
+    product_id:305,
+    product_name :"health care and wellness",
+    product_Description: "A professional white medical coat, often associated with doctors and healthcare professionals. The stethoscope around the neck adds to the authoritative and knowledgeable appearance",
+    product_image: h5,
+    product_price :300,
+  },
+  {
+    product_id:306,
+    product_name :"health care and wellness",
+    product_Description: ": Bright pink medical scrubs with a short-sleeved top and matching pants, presenting a clean and professional look. The scrubs are designed for comfort and practicality, allowing easy movement.",
+    product_image: h6,
+    product_price :300,
+  },
+]
+
+export const normal =[
+  {
+    product_id:401,
+    product_name :"INDUSTRIAL yellow jaket",
+    product_Description: "High-visibility safety vest worn over a dark-colored polo shirt, paired with a white hard hat for head protection—typical of construction or industrial environments.",
+    product_image: n1 ,
+    product_price :300,
+  },
+  {
+    product_id:402,
+    product_name :"industriacl suit",
+    product_Description: "Full-body coverall in grey with adjustable suspenders, worn over a checkered shirt. Paired with a yellow safety helmet, transparent safety goggles, orange protective gloves, and green rubber boots.",
+    product_image: n2 ,
+    product_price :1200,
+  },
+  {
+    product_id:403,
+    product_name :"orange jaket",
+    product_Description: "Bright red industrial jacket over a checkered shirt, worn with protective yellow work gloves and a yellow safety helmet. He is also holding a pipe wrench, suggesting a trade profession.",
+    product_image: n3 ,
+    product_price :300,
+  },
+  {
+    product_id:404,
+    product_name :"normal jaket light gray polo shirt",
+    product_Description: "Light grey polo shirt under a bright neon green safety vest with reflective silver stripes. Worn with a blue hard hat and clear protective glasses.",
+    product_image: n4 ,
+    product_price :300,
+  },
+  {
+    product_id:405,
+    product_name :"Heavy-Duty Denim Work Shirt",
+    product_Description: "Durable and breathable denim shirt, ideal for workers in manufacturing units. Designed for long shifts and heavy-duty environments.",
+    product_image: n5 ,
+    product_price :300,
+  },
+]
+
+export const resto =[
+  {
+    product_id:501,
+    product_name :"Bib Apron",
+    product_Description: "Bib Apron Designed for chefs and restaurant staff, offering full coverage and practical storage. Made from durable, easy-care fabrics with adjustable straps for a secure fit. ",
+    product_image: r1 ,
+    product_price :300,
+  },
+  {
+    product_id:502,
+    product_name :"WEST APRON",
+    product_Description: "West Apron Designed for front-of-house staff, offering ease of movement and practical storage. Made from durable, easy-care fabrics with multiple pockets for essentials. ",
+    product_image: r2 ,
+    product_price :300,
+  },
+  {
+    product_id:503,
+    product_name :"Polo Shirts",
+    product_Description: "Polo Shirts Designed for comfort and professionalism in hotel and restaurant settings. Made from breathable, easy-care fabrics for all-day wear.",
+    product_image: r3 ,
+    product_price :300,
+  },
+  {
+    product_id:504,
+    product_name :"Chef Jackets",
+    product_Description: "Jackets Designed for professional kitchen environments, providing heat resistance and spill protection. Made from breathable, durable fabrics with a stand-up collar and optional pockets.",
+    product_image: r4 ,
+    product_price :300,
+  },
+]
+
+export const security=[
+  {
+    product_id:601,
+    product_name :"Security Uniform ",
+    product_Description: "Designed for professional security personnel, offering durability and comfort for long shifts. Features a light blue long-sleeve shirt with buttoned chest pockets, dark blue pants, and a secure belt for a polished look. ",
+    product_image: s1 ,
+    product_price :300,
+  },
+  {
+    product_id:602,
+    product_name :"Bouncer",
+    product_Description: "Designed for security personnel, providing a strong and professional appearance. Features a fitted black T-shirt or jacket, durable pants, and sturdy footwear for mobility and comfort. Ideal for nightclub, event, and venue security roles. ",
+    product_image: s2 ,
+    product_price :300,
+  },
+  {
+    product_id:603,
+    product_name :"Security Uniform ",
+    product_Description: "Designed for professional security personnel, offering durability and comfort for long shifts. Features a light blue short-sleeved shirt with chest pockets, dark blue trousers, and a secure belt for a polished look.",
+    product_image: s3 ,
+    product_price :300,
+  },
+  {
+    product_id:604,
+    product_name :"Bouncer",
+    product_Description: "Uniform Designed for event and venue security, offering durability and authority.",
+    product_image: s4 ,
+    product_price :300,
+  },
+  {
+    product_id:605,
+    product_name :" Work Shirt",
+    product_Description: "A formal yet approachable look featuring a white dress shirt and light-colored pants, complemented by a black jacket. ",
+    product_image: s5 ,
+    product_price :300,
+  },
+]
+
+export const school =[
+  {
+    product_id:701,
+    product_name :"School Uniform ",
+    product_Description: "The combination of a white shirt, grey vest, and striped tie gives a professional and polished look.",
+    product_image: sc1 ,
+    product_price :300,
+  },
+  {
+    product_id:702,
+    product_name :"Light yellow shirt with subtle stripes",
+    product_Description: "Gives a crisp and polished appearance while adding texture to the uniform.",
+    product_image: sc2 ,
+    product_price :300,
+  },
+  {
+    product_id:703,
+    product_name :"Light yellow shirt with thin vertical stripes",
+    product_Description: "Light yellow shirt with thin vertical stripes",
+    product_image: sc3 ,
+    product_price :300,
+  },
+  {
+    product_id:704,
+    product_name :"Light yellow shirt with thin vertical stripe",
+    product_Description: "Adds a touch of texture and elegance while maintaining a professional look.",
+    product_image: sc4 ,
+    product_price :300,
+  },
+  {
+    product_id:705,
+    product_name :"Classic color scheme",
+    product_Description: "The combination of a white shirt, grey vest, and striped tie gives a professional and polished look.",
+    product_image: sc5 ,
+    product_price :300,
+  },
+]
