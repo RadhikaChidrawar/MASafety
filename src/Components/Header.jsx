@@ -124,7 +124,7 @@ export default function Header() {
         </Link>
 
         {/* Blog Dropdown */}
-        <div className="relative group">
+        {/*<div className="relative group">
           <button
             onClick={() => toggleSubmenu("blog")}
             className="flex items-center gap-1 hover:text-orange-400 transition-all duration-300"
@@ -144,10 +144,10 @@ export default function Header() {
               </Link>
             </div>
           )}
-        </div>
+        </div>*/}
 
         {/* Page Dropdown */}
-        <div className="relative group">
+        {/*<div className="relative group">
           <button
             onClick={() => toggleSubmenu("page")}
             className="flex items-center gap-1 hover:text-orange-400 transition-all duration-300"
@@ -164,16 +164,13 @@ export default function Header() {
               </Link>
             </div>
           )}
-        </div>
+        </div>*/}
 
         <Link to="/services" className="hover:text-orange-400 transition-all duration-300">
           Services
         </Link>
         <Link to="/shop" className="hover:text-orange-400 transition-all duration-300">
           Shop
-        </Link>
-        <Link to="/projects" className="hover:text-orange-400 transition-all duration-300">
-          Projects
         </Link>
         <Link to="/contact" className="hover:text-orange-400 transition-all duration-300">
           Contact
@@ -252,7 +249,7 @@ export default function Header() {
           </Link>
 
           {/* Blog Submenu */}
-          <div>
+          {/*<div>
             <button
               onClick={() => toggleSubmenu("mobileBlog")}
               className="flex items-center justify-between w-full text-white hover:text-orange-400 transition-all duration-300 py-2"
@@ -287,10 +284,10 @@ export default function Header() {
                 </Link>
               </div>
             )}
-          </div>
+          </div>*/}
 
           {/* Page Submenu */}
-          <div>
+          {/*<div>
             <button
               onClick={() => toggleSubmenu("mobilePage")}
               className="flex items-center justify-between w-full text-white hover:text-orange-400 transition-all duration-300 py-2"
@@ -318,7 +315,7 @@ export default function Header() {
                 </Link>
               </div>
             )}
-          </div>
+          </div>*/}
           
           <Link
             to="/services"
@@ -333,13 +330,6 @@ export default function Header() {
             onClick={() => setMenuOpen(false)}
           >
             <FaShop /> Shop
-          </Link>
-          <Link
-            to="/projects"
-            className="flex items-center gap-2 text-white hover:text-orange-400 transition-all duration-300 py-2"
-            onClick={() => setMenuOpen(false)}
-          >
-            <GrProjects /> Projects
           </Link>
           <Link
             to="/contact"
