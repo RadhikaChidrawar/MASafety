@@ -6,7 +6,7 @@ import {
   decressQuentity,
   incressQuentity,
   removeFromCart,
-  updateQuantity
+  updateQuantity,
 } from "../redux/cartSlice";
 import { useNavigate } from "react-router-dom";
 
@@ -108,6 +108,13 @@ function Buynow() {
                   </div>
                 ))}
               </div>
+              {/* <button className="w-30 bg-orange-500 text-white py-2 rounded hover:bg-orange-600">Inquery</button> */}
+              <button
+                className="w-30 bg-orange-500 text-white py-2 rounded hover:bg-orange-600"
+                onClick={() => navigate("/inquiry")}
+              >
+                Inquiry
+              </button>
             </div>
 
             {/* Cart Summary */}
