@@ -4,6 +4,10 @@ import shopPdf from '../doc/shop.pdf';
 import gst from '../doc/gst.pdf';
 import pan from '../doc/pan.jpeg';
 
+import imgGst from '../assets/gst.jpeg'
+import imgpan from '../assets/pan.jpeg'
+import imgshop from '../assets/shopact.jpeg'
+
 const docList = [
   {
     id: 1,
@@ -11,7 +15,7 @@ const docList = [
     type: "GST",
     description: "This certificate confirms registration under GST for tax purposes.",
     fileUrl: gst,
-    // image: "/images/gst-doc.jpg",
+    image:imgGst,
   },
   {
     id: 2,
@@ -19,15 +23,15 @@ const docList = [
     type: "SHOP ACT",
     description: "Legal permission to run a shop or establishment.",
     fileUrl: shopPdf,
-    // image: "/images/shop-act.jpg",
+    image : imgshop,
   },
   {
     id: 3,
     title: "Company PAN Card",
     type: "PAN CARD",
     description: "Company's Permanent Account Number for income tax purposes.",
-    fileUrl: pan, 
-    // image: "/assets/g2.jpeg",
+    fileUrl: pan,
+    image : imgpan,
   },
 ];
 
@@ -71,7 +75,7 @@ export default function DocContainer() {
           >
             <div className="aspect-video overflow-hidden">
               <img
-                src={doc.fileUrl}
+                src={doc.image}
                 alt={doc.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
@@ -96,7 +100,7 @@ export default function DocContainer() {
         ))}
       </motion.div>
 
-      {/* Modal for detailed view */}
+      {/* Modal */}
       {selectedDoc && (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-lg shadow-lg w-full max-w-2xl max-h-[90vh] overflow-auto relative">
@@ -109,31 +113,29 @@ export default function DocContainer() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-            
+
             <div className="p-6">
               <h2 className="text-2xl font-bold mb-2 text-gray-800">{selectedDoc.title}</h2>
               <p className="text-gray-600 mb-4">{selectedDoc.description}</p>
-              
+
               <div className="mt-4 border rounded-lg overflow-hidden">
-                {selectedDoc.fileUrl.endsWith('.pdf') ? (
-                  <iframe
-                    src={selectedDoc.fileUrl}
-                    className="w-full h-[500px]"
-                    title={selectedDoc.title}
-                    type="application/pdf"
-                    loading="lazy"
-                  />
+                {selectedDoc.fileUrl.endsWith(".pdf") ? (
+                  <>
+                    <iframe
+                      src={selectedDoc.fileUrl}
+                      className="w-full h-[500px]"
+                      title={selectedDoc.title}
+                      type="application/pdf"
+                      loading="lazy"
+                    />
+                  </>
                 ) : (
-                  <img 
-                    src={selectedDoc.fileUrl} 
+                  <img
+                    src={selectedDoc.fileUrl}
                     alt={selectedDoc.title}
                     className="w-full h-auto max-h-[500px] object-contain mx-auto"
                   />
                 )}
-              </div>
-              
-              <div className="mt-4 flex justify-end">
-                
               </div>
             </div>
           </div>
