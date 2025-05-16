@@ -18,7 +18,6 @@ import Signin from "./Pages/Signin";
 import Team from "./Pages/Team";
 import BlogLeft from "./Components/BlogLeft";
 import BlogRight from "./Components/BlogRight";
-import Profile from "./Components/Profile";
 import TestimonialSection from "./Components/TestimonialSection";
 
 function App() {
@@ -41,12 +40,8 @@ function App() {
         <Route path="/buynow" element={<Buynow />} />
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/filter-data" element={<FilterData />} />
-        <Route path="/profile" element={<Profile />} />
+      
 
-        {/* Admin Routes */}
-        {/* <Route path="/admin/*" element={<AdminRoutes />} />   */}
-        {/* <Route path="/admin/*" element={<AdminRoutes role="accountAdmin" />} /> */}
-        {/* Redirect admin root to the proper dashboard based on role */}
         <Route
           path="/admin"
           element={

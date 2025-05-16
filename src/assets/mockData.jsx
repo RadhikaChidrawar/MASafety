@@ -34,10 +34,11 @@ import d8 from './d8.png';
 
 import c1 from './c1.png';
 import c2 from './c2.png';
+// import c2 from '../doc/Gst Registration certificate-1.pdf';
 
 import h1 from './h1.png';
 import h2 from './h2.png';
-import h3 from './h3.png';
+// import h3 from './h7.png';
 import h4 from './h4.png';
 import h5 from './h5.jpg';
 import h6 from './h6.png';
@@ -64,6 +65,29 @@ import sc2 from './sc2.jpg';
 import sc3 from './sc3.png';
 import sc4 from './sc4.png';
 import sc5 from './ss3.png';
+
+import h11 from './h3.jpeg'
+import h12 from './h7.jpeg'
+// import h134 from './h.png'
+
+
+import g1 from './g1.jpeg'
+import g2 from './g2.jpeg'
+import g3 from './g3.jpeg'
+
+import go1 from './go1.jpeg'
+import go2 from './go2.jpeg'
+import go3 from './go3.jpeg'
+
+import m1 from './m1.jpeg'
+import m2 from './m2.jpeg'
+import m3 from './m3.jpeg'
+
+import v1 from './v1.jpeg'
+import v2 from './v2.jpeg'
+import v3 from './v3.jpeg'
+
+
 
 
 const sampleData = [
@@ -447,7 +471,7 @@ export const health =[
     product_id:303,
     product_name :"White Lab Coat ",
     product_Description: "Coat A professional, breathable coat designed for healthcare professionals. Tailored fit with a front button closure, structured collar, and side pockets for essential tools. Ideal for hospitals, clinics, and research facilities. ",
-    product_image: h3 ,
+    product_image: h5 ,
     product_price :200,
   },
   {
@@ -617,3 +641,171 @@ export const school =[
     product_price :300,
   },
 ]
+
+export const helmetProducts = [
+  {
+    product_id: 1,
+    product_name: "Safety Helmet",
+    product_Description:
+      "Durable hard hat with shock absorption for construction sites.",
+    product_price: 1200,
+    product_image: h11,
+  },
+  {
+    product_id: 2,
+    product_name: "Industrial Safety Helmet",
+    product_Description:
+      "Lightweight and comfortable helmet with adjustable strap for daily site use.",
+    product_price: 950,
+    product_image: h12,
+  },
+  {
+    product_id: 3,
+    product_name: "Vented Construction Helmet",
+    product_Description:
+      "High-quality helmet with ventilation and sweatband for extended wear.",
+    product_price: 1350,
+    product_image: h11,
+  },
+];
+
+export const glovesProducts = [
+  {
+    product_id: 4,
+    product_name: "Rubber Safety Gloves",
+    product_Description:
+      "Durable rubber gloves ideal for chemical handling and industrial use.",
+    product_price: 300,
+    product_image: g1,
+  },
+  {
+    product_id: 5,
+    product_name: "Cut-Resistant Gloves",
+    product_Description:
+      "Level-5 cut-resistant gloves made from high-strength fibers for maximum protection.",
+    product_price: 450,
+    product_image: g2,
+  },
+  {
+    product_id: 6,
+    product_name: "Heat Resistant Gloves",
+    product_Description:
+      "Gloves designed to withstand high temperatures, perfect for welding and metalwork.",
+    product_price: 550,
+    product_image: g3,
+  },
+];
+
+export const goggleProducts = [
+  {
+    product_id: 7,
+    product_name: "Anti-Fog Safety Goggles",
+    product_Description:
+      "Clear lens goggles with anti-fog coating and side protection for industrial use.",
+    product_price: 250,
+    product_image: go1,
+  },
+  {
+    product_id: 8,
+    product_name: "UV Protection Safety Goggles",
+    product_Description:
+      "Protective goggles with UV-resistant lenses suitable for both indoor and outdoor work.",
+    product_price: 320,
+    product_image: go2,
+  },
+  {
+    product_id: 9,
+    product_name: "Chemical Splash Goggles",
+    product_Description:
+      "Sealed goggles providing full eye protection against chemical splashes and dust.",
+    product_price: 400,
+    product_image: go3,
+  },
+];
+
+export const maskProducts = [
+  {
+    product_id: 10,
+    product_name: "N95 Respirator Mask",
+    product_Description:
+      "High-efficiency N95 mask with multi-layer filtration for dust and pollutants.",
+    product_price: 120,
+    product_image: m1,
+  },
+  {
+    product_id: 11,
+    product_name: "Reusable Cotton Face Mask",
+    product_Description:
+      "Washable and breathable cotton mask ideal for daily use and comfort.",
+    product_price: 80,
+    product_image: m2,
+  },
+  {
+    product_id: 12,
+    product_name: "Activated Carbon Mask",
+    product_Description:
+      "Protective face mask with activated carbon filter for industrial and urban environments.",
+    product_price: 150,
+    product_image: m3,
+  },
+];
+
+export const vestProducts = [
+  {
+    product_id: 13,
+    product_name: "Reflective Safety Vest",
+    product_Description:
+      "High-visibility vest with reflective strips for maximum safety on construction sites and roads.",
+    product_price: 250,
+    product_image: v1,
+  },
+  {
+    product_id: 14,
+    product_name: "Mesh Safety Vest",
+    product_Description:
+      "Lightweight mesh vest with front zipper and reflective tape for breathability and visibility.",
+    product_price: 200,
+    product_image: v2,
+  },
+  {
+    product_id: 15,
+    product_name: "Multi-Pocket Safety Vest",
+    product_Description:
+      "Durable vest with multiple pockets and reflective design, ideal for site supervisors and engineers.",
+    product_price: 320,
+    product_image: v3,
+  },
+];
+
+// export const docList = [
+//   {
+//     id: 1,
+//     title: "GST Registration Certificate",
+//     type: "GST",
+//     description: "This certificate confirms registration under GST for tax purposes.",
+//     // fileUrl: "/doc/GSTRegistrationCertificate.pdf",
+//     fileUrl:".",
+//     image: "/images/gst-doc.jpg",
+//   },
+//   {
+//     id: 2,
+//     title: "Shop Act License",
+//     type: "SHOP ACT",
+//     description: "Legal permission to run a shop or establishment.",
+//     fileUrl: "/doc/ShopActCertificate.pdf",
+//     image: "/images/shop-act.jpg",
+//   },
+//   {
+//     id: 3,
+//     title: "Company PAN Card",
+//     type: "PAN CARD",
+//     description: "Company's Permanent Account Number for income tax purposes.",
+//     fileUrl: "/doc/pan.jpeg", 
+//     image: "/images/pan-card.jpg",
+//   },
+// ];
+
+
+
+
+

@@ -38,7 +38,7 @@ export default function HeroSection() {
         </p>
 
         {/* Buttons */}
-        <div className="mt-6 flex flex-col sm:flex-row items-center gap-4 justify-center space-x-4">
+        {/* <div className="mt-6 flex flex-col sm:flex-row items-center gap-4 justify-center space-x-4">
           <button
             className="bg-red-600 flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-lg sm:text-lg shadow-lg 
                         hover:bg-red-700 transition-transform transform hover:scale-105"
@@ -51,7 +51,7 @@ export default function HeroSection() {
           >
             < FlagCircleIcon /> Go Safe
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );   

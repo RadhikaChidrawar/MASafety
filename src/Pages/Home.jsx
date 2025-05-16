@@ -11,23 +11,28 @@ import StatsSection from "../Components/StatsSection";
 import TeamSection from "../Components/TeamSection";
 import TestimonialSection from "../Components/TestimonialSection";
 import WhyChooseUs from "../Components/WhyChooseUs";
+import Doc from "../Components/DocContainer"; 
+import DocContainer from "../Components/DocContainer";
 
 export default function Home() {
   return (
     <div>
       <HeroSection />
-      {/* <AboutSection /> */}
       <AnimatedCards />
-      <ServicesSection />
-      <ProjectsSection />
-      <ConsultancyBanner />
-      <WhyChooseUs />
-      <StatsSection />
       <ProductCarousel />
+      <ProjectsSection />
+      <WhyChooseUs />
       <TeamSection />
-      {/* <PartnersSection /> */}
-      {/* <TestimonialSection /> */}
-      <SafetyNews />
+
+      {/* Sticky "Ask Any Question" Button */}
+      <button
+        className="fixed bottom-5 right-5 bg-orange-600 text-white px-5 py-3 rounded-full shadow-lg hover:bg-orange-700 transition z-50"
+        onClick={() => alert("You clicked Ask Any Question!")}
+      >
+        Ask Any Question
+      </button>
+
+      <DocContainer/>
     </div>
   );
 }

@@ -29,12 +29,12 @@ export default function Footer() {
               <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
                 FAQs
               </li>
-              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
+              {/* <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
                 Terms & Conditions
-              </li>
-              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
+              </li> */}
+              {/* <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
                 Legal Notice
-              </li>
+              </li> */}
             </ul>
             {/* <button className="mt-4 md:mt-6 px-4 md:px-6 py-2 bg-orange-500 text-white rounded-md text-sm hover:bg-orange-600 transition-colors duration-200 shadow-md">
               Buy Now
@@ -66,12 +66,12 @@ export default function Footer() {
               <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
                 Delivery
               </li>
-              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
+              {/* <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
                 Wishlist
               </li>
               <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
                 Blog Page
-              </li>
+              </li> */}
               <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
                 Search
               </li>

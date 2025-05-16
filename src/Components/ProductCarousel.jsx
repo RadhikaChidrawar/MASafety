@@ -6,6 +6,7 @@ import helmet from "../assets/helmet.png";
 import shoes from "../assets/shoes.png";
 import fireman from "../assets/fireman.png";
 import safetykit from "../assets/safety-kit.png";
+import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 
 const products = [
   { id: 1, title: 'Solar Product Title 05', image: helmet },
@@ -18,8 +19,14 @@ export default function ProductCarousel() {
   return (
     <section className="py-12 bg-white">
       <h2 className="text-center text-2xl font-bold text-gray-800 mb-6">
-        SAFETY WEAR ACCESSORIES
+        SAFETY WEAR SERVICES
       </h2>
+      {/* Divider with Icon */}
+      <div className="flex justify-center items-center my-4">
+        <span className="w-32 h-px bg-gray-300"></span>
+        <span className="mx-2 text-orange-500 text-3xl"><HealthAndSafetyIcon fontSize="large"/></span>
+        <span className="w-32 h-px bg-gray-300"></span>
+      </div>
       <Swiper
         navigation={true}
         modules={[Navigation]}

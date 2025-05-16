@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { AiOutlineLogin } from "react-icons/ai";  // Sign In Icon
 import { BiShoppingBag } from "react-icons/bi";
 import { IoHome, IoLogInSharp } from "react-icons/io5";
-import { PiGithubLogoFill } from "react-icons/pi";
+
 import {
   FaBars,
   FaTimes,
@@ -122,50 +122,6 @@ export default function Header() {
         <Link to="/" className="hover:text-orange-400 transition-all duration-300">
           Home
         </Link>
-
-        {/* Blog Dropdown */}
-        {/*<div className="relative group">
-          <button
-            onClick={() => toggleSubmenu("blog")}
-            className="flex items-center gap-1 hover:text-orange-400 transition-all duration-300"
-          >
-            Blog <FaChevronDown size={12} className={`transition-transform duration-300 ${submenuOpen === "blog" ? "rotate-180" : ""}`} />
-          </button>
-          {submenuOpen === "blog" && (
-            <div className="absolute left-0 mt-2 bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-lg rounded-md w-56 z-50 overflow-hidden opacity-100 transition-all duration-300">
-              <Link to="/blog" className="block px-4 py-2 hover:bg-orange-600 transition-all duration-300">
-                Blog With No Sidebar
-              </Link>
-              <Link to="/blog-left" className="block px-4 py-2 hover:bg-orange-600 transition-all duration-300">
-                Blog Left Sidebar
-              </Link>
-              <Link to="/blog-right" className="block px-4 py-2 hover:bg-orange-600 transition-all duration-300">
-                Blog Right Sidebar
-              </Link>
-            </div>
-          )}
-        </div>*/}
-
-        {/* Page Dropdown */}
-        {/*<div className="relative group">
-          <button
-            onClick={() => toggleSubmenu("page")}
-            className="flex items-center gap-1 hover:text-orange-400 transition-all duration-300"
-          >
-            Page <FaChevronDown size={12} className={`transition-transform duration-300 ${submenuOpen === "page" ? "rotate-180" : ""}`} />
-          </button>
-          {submenuOpen === "page" && (
-            <div className="absolute left-0 mt-2 bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-lg rounded-md w-56 z-50 overflow-hidden opacity-100 transition-all duration-300">
-              <Link to="/page" className="block px-4 py-2 hover:bg-orange-600 transition-all duration-300">
-                Page Left Sidebar
-              </Link>
-              <Link to="/page" className="block px-4 py-2 hover:bg-orange-600 transition-all duration-300">
-                Page Right Sidebar
-              </Link>
-            </div>
-          )}
-        </div>*/}
-
         <Link to="/services" className="hover:text-orange-400 transition-all duration-300">
           Services
         </Link>
@@ -247,76 +203,6 @@ export default function Header() {
           >
             <IoHome /> Home
           </Link>
-
-          {/* Blog Submenu */}
-          {/*<div>
-            <button
-              onClick={() => toggleSubmenu("mobileBlog")}
-              className="flex items-center justify-between w-full text-white hover:text-orange-400 transition-all duration-300 py-2"
-            >
-              <div className="flex items-center gap-2">
-                <PiGithubLogoFill /> Blog
-              </div>
-              <FaChevronDown size={12} className={`transition-transform duration-300 ${submenuOpen === "mobileBlog" ? "rotate-180" : ""}`} />
-            </button>
-            {submenuOpen === "mobileBlog" && (
-              <div className="pl-8 py-1 bg-blue-800 rounded my-1">
-                <Link
-                  to="/blog"
-                  className="block text-white hover:text-orange-400 py-2"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  Blog With No Sidebar
-                </Link>
-                <Link
-                  to="/blog-left"
-                  className="block text-white hover:text-orange-400 py-2"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  Blog Left Sidebar
-                </Link>
-                <Link
-                  to="/blog-Right"
-                  className="block text-white hover:text-orange-400 py-2"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  Blog Right Sidebar
-                </Link>
-              </div>
-            )}
-          </div>*/}
-
-          {/* Page Submenu */}
-          {/*<div>
-            <button
-              onClick={() => toggleSubmenu("mobilePage")}
-              className="flex items-center justify-between w-full text-white hover:text-orange-400 transition-all duration-300 py-2"
-            >
-              <div className="flex items-center gap-2">
-                <RiPagesLine /> Page
-              </div>
-              <FaChevronDown size={12} className={`transition-transform duration-300 ${submenuOpen === "mobilePage" ? "rotate-180" : ""}`} />
-            </button>
-            {submenuOpen === "mobilePage" && (
-              <div className="pl-8 py-1 bg-blue-800 rounded my-1">
-                <Link
-                  to="/page"
-                  className="block text-white hover:text-orange-400 py-2"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  Page Left Sidebar
-                </Link>
-                <Link
-                  to="/page"
-                  className="block text-white hover:text-orange-400 py-2"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  Page Right Sidebar
-                </Link>
-              </div>
-            )}
-          </div>*/}
-          
           <Link
             to="/services"
             className="flex items-center gap-2 text-white hover:text-orange-400 transition-all duration-300 py-2"
@@ -331,6 +217,13 @@ export default function Header() {
           >
             <FaShop /> Shop
           </Link>
+          {/* <Link
+            to="/profile"
+            className="flex items-center gap-2 text-white hover:text-orange-400 transition-all duration-300 py-2"
+            onClick={() => setMenuOpen(false)}
+          >
+            <IoPersonCircleSharp />Profile
+          </Link> */}
           <Link
             to="/contact"
             className="flex items-center gap-2 text-white hover:text-orange-400 transition-all duration-300 py-2"
