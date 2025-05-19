@@ -3,6 +3,7 @@ import service2 from "../assets/service2.jpg";
 import service3 from "../assets/service3.jpg";
 import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 
+
 export default function ServicesSection() {
   const services = [
     { title: "Service Title2", image: service1 },

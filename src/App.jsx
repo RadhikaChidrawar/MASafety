@@ -19,6 +19,7 @@ import Team from "./Pages/Team";
 import BlogLeft from "./Components/BlogLeft";
 import BlogRight from "./Components/BlogRight";
 import TestimonialSection from "./Components/TestimonialSection";
+import QuerySection from "./Components/QuerySection";
 
 function App() {
   const currentRole = localStorage.getItem("userRole") || "accountAdmin";
@@ -40,6 +41,7 @@ function App() {
         <Route path="/buynow" element={<Buynow />} />
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/filter-data" element={<FilterData />} />
+        <Route path="/query" element={<QuerySection />} />
       
 
         <Route

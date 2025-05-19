@@ -1,24 +1,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import FireSafety from "../assets/FireSafety.jpg";
-import FirstAid from "../assets/FirstAid.jpg";
-import SecuritySystems from "../assets/SecuritySystems.jpg";
+import h1 from '../assets/h7.jpeg';
+import g1 from '../assets/g2.jpeg';
+import s1 from '../assets/shoes.jpeg';
 
 const servicesData = [
   {
     title: 'Fire Safety',
     description: 'Ensure your workplace is protected with advanced fire safety equipment and protocols.',
-    image: FireSafety,
+    image: h1,
   },
   {
     title: 'First Aid Training',
     description: 'Learn life-saving skills with our professional first aid training programs.',
-    image: FirstAid,
+    image:g1,
   },
   {
     title: 'Security Systems',
     description: 'Protect your premises with the latest security system technology.',
-    image: SecuritySystems,
+    image: s1,
   },
 ];
 
