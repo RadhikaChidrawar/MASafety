@@ -8,12 +8,12 @@ import prod8 from "./protective_dress.jpeg";
 import prod13 from "./Electrical_Gloves.jpeg";
 import prod14 from "./cloth mask.jpeg";
 import prod15 from "./Shoe1.png";
-// import prod16 from "./shoe2.png";
+
 import prod17 from "./Shoe3.png";
 import prod18 from "./shoes.png";
 import prod19 from "./shoes5.png";
 import prod20 from "./shos6.png";
-import prod21 from "./shose4.png";
+import prod21 from "./Shoe3.png";
 import prod22 from "./shose7.png";
 import prod23 from "./shose8.png";
 import prod24 from "./shose9.png";
@@ -34,11 +34,9 @@ import d8 from './d8.png';
 
 import c1 from './c1.png';
 import c2 from './c2.png';
-// import c2 from '../doc/Gst Registration certificate-1.pdf';
 
 import h1 from './h1.png';
 import h2 from './h2.png';
-// import h3 from './h7.png';
 import h4 from './h4.png';
 import h5 from './h5.jpg';
 import h6 from './h6.png';
@@ -776,36 +774,3 @@ export const vestProducts = [
     product_image: v3,
   },
 ];
-
-// export const docList = [
-//   {
-//     id: 1,
-//     title: "GST Registration Certificate",
-//     type: "GST",
-//     description: "This certificate confirms registration under GST for tax purposes.",
-//     // fileUrl: "/doc/GSTRegistrationCertificate.pdf",
-//     fileUrl:".",
-//     image: "/images/gst-doc.jpg",
-//   },
-//   {
-//     id: 2,
-//     title: "Shop Act License",
-//     type: "SHOP ACT",
-//     description: "Legal permission to run a shop or establishment.",
-//     fileUrl: "/doc/ShopActCertificate.pdf",
-//     image: "/images/shop-act.jpg",
-//   },
-//   {
-//     id: 3,
-//     title: "Company PAN Card",
-//     type: "PAN CARD",
-//     description: "Company's Permanent Account Number for income tax purposes.",
-//     fileUrl: "/doc/pan.jpeg", 
-//     image: "/images/pan-card.jpg",
-//   },
-// ];
-
-
-
-
-
