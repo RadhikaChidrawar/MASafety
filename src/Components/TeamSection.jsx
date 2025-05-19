@@ -4,8 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import team1 from "../assets/per1.jpeg";
 import team2 from "../assets/per2.jpeg";
-// import team3 from "../assets/team3.jpg";
-// import team4 from "../assets/team4.jpg";
+import { LuPhoneCall } from "react-icons/lu";
 
 const teamMembers = [
   {
@@ -72,14 +71,15 @@ export default function TeamSection() {
                 </div>
                 <div className="text-center">
                   <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                  <p className="text-blue-300 mb-4">{member.role}</p>
-                  <div className="flex justify-center opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                    <span className="bg-blue-600 px-4 py-1 rounded-full text-white text-sm shadow-md">
-                      {member.social.phoneNo}
+                  <p className="text-blue-300 mb-4">{member.role}</p> 
+                  <div className="flex justify-center transform opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                    <span className="bg-blue-600 px-4 py-1 rounded-full text-white text-sm shadow-md flex items-center gap-2">
+                      <LuPhoneCall  />
+                      {member?.social?.phoneNo}
                     </span>
                   </div>
                 </div>
-                <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-blue-500 rounded-full opacity-10 group-hover:opacity-20 transition-opacity duration-300"></div>
+                <div className="absolute -bottom-6 -right-6 w-24 h-24  bg-blue-500 rounded-full opacity-10 group-hover:opacity-20 transition-opacity duration-300"></div>
               </div>
             </SwiperSlide>
           ))}
