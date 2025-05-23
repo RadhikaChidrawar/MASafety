@@ -5,7 +5,6 @@ import AdminRoutes from "./AdminRoutes";
 import "./App.css";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
-import Blog from "./Pages/Blog";
 import Buynow from "./Pages/Buynow";
 import CheckoutPage from "./Pages/CheckOutPage";
 import Contact from "./Pages/Contact";
@@ -15,10 +14,6 @@ import Projects from "./Pages/Projects";
 import Services from "./Pages/Services";
 import Shop from "./Pages/Shop";
 import Signin from "./Pages/Signin";
-import Team from "./Pages/Team";
-import BlogLeft from "./Components/BlogLeft";
-import BlogRight from "./Components/BlogRight";
-import TestimonialSection from "./Components/TestimonialSection";
 import QuerySection from "./Components/QuerySection";
 
 function App() {
@@ -29,13 +24,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog-left" element={<BlogLeft />} />
-        <Route path="/blog-Right" element={<BlogRight />} />
         <Route path="/services" element={<Services />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/buynow" element={<Buynow />} />
