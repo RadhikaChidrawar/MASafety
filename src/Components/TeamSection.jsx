@@ -10,7 +10,7 @@ const teamMembers = [
   {
     name: "Amit Mahavir Patil",
     role: "CEO / FOUNDER",
-    image: team1,
+    image: team2,
     social: {
       phoneNo: 9766091811,
     },
@@ -18,7 +18,7 @@ const teamMembers = [
   {
     name: "Mahadev Waybase",
     role: "Marketing Director",
-    image: team2,
+    image: team1,
     social: {
       phoneNo: 9922759640,
     },
