@@ -70,7 +70,7 @@ export default function TeamSection() {
           {teamMembers.map((member, index) => (
             <SwiperSlide key={index}>
               <div className="group relative bg-gradient-to-b from-blue-900 to-blue-800 rounded-xl p-6 pb-10 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden">
-                <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white/20 group-hover:border-blue-400 transition-all duration-500">
+                <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white/20 group-hover:border-blue-400 transition-all duration-500 flex items-center justify-center">
                   <img
                     src={member.image}
                     alt={member.name}

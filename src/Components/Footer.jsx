@@ -28,21 +28,8 @@ export default function Footer() {
               </li>
               <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
                 FAQs
-              </li>
-              {/* <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
-                Terms & Conditions
-              </li> */}
-              {/* <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
-                Legal Notice
-              </li> */}
+              </li>  
             </ul>
-            {/* <button className="mt-4 md:mt-6 px-4 md:px-6 py-2 bg-orange-500 text-white rounded-md text-sm hover:bg-orange-600 transition-colors duration-200 shadow-md">
-              Buy Now
-            </button>
-            <button className="mt-4 md:mt-6 px-4 md:px-6  py-2 bg-orange-500 text-white rounded-md text-sm hover:bg-orange-600 transition-colors duration-200 shadow-md">
-              call Now : 9545261030
-            </button> */}
-
             <div className="mt-4 md:mt-6 flex flex-col md:flex-row gap-4">
               <button className="px-4 md:px-6 py-2 bg-orange-500 text-white rounded-md text-sm hover:bg-orange-600 transition-colors duration-200 shadow-md">
                 Buy Now
@@ -66,12 +53,6 @@ export default function Footer() {
               <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
                 Delivery
               </li>
-              {/* <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
-                Wishlist
-              </li>
-              <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
-                Blog Page
-              </li> */}
               <li className="hover:text-orange-500 cursor-pointer transition-colors duration-200">
                 Search
               </li>
@@ -119,7 +100,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="mt-6 md:mt-8 text-center text-white text-sm">
-            <p>© 2025 Your Company. All rights reserved.</p>
+            <p>copy right @  SPCL infotech services pvt ltd, pune </p>
           </div>
         </div>
       </div>
