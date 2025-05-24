@@ -100,7 +100,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="mt-6 md:mt-8 text-center text-white text-sm">
-            <p>copy right @  SPCL infotech services pvt ltd, pune </p>
+            <p>Copy Right @  SPCL Infotech Services Pvt Ltd, Pune. </p>
           </div>
         </div>
       </div>
