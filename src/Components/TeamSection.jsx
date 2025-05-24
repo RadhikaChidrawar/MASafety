@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import team1 from "../assets/per1.jpeg";
 import team2 from "../assets/per2.jpeg";
+import team3 from "../assets/per3.jpeg";
 import { LuPhoneCall } from "react-icons/lu";
 
 const teamMembers = [
@@ -21,6 +22,14 @@ const teamMembers = [
     image: team2,
     social: {
       phoneNo: 9766091811,
+    },
+  },
+  {
+    name: "Rutuja Ashok Chavan",
+    role: " Admin",
+    image: team3,
+    social: {
+      phoneNo: 7397966913,
     },
   },
 ];
