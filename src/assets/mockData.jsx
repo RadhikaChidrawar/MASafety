@@ -40,17 +40,24 @@ import h2 from './h2.png';
 import h4 from './h4.png';
 import h5 from './h5.jpg';
 import h6 from './h6.png';
+import h9 from './h9.jpeg';
+import h10 from './h10.jpeg';
+import h13 from './h11.jpeg';
+import h14 from './h12.jpeg';
 
 import n1 from './n1.png';
 import n2 from './n2.png';
 import n3 from './n3.png';
 import n4 from './n5.png';
 import n5 from './n6.jpg';
+import n7 from './n7.jpeg';
+import n8 from './n8.jpeg';
 
 import r1 from './r1.png';
 import r2 from './r2.jpg';
 import r3 from './r3.jpg';
 import r4 from './r4.jpg';
+import r5 from './r5.jpg';
 
 import s1 from './s1.png';
 import s2 from './s3.png';
@@ -455,7 +462,7 @@ export const health =[
     product_id:301,
     product_name :"Two-piece medical scrub ",
     product_Description: "comfortable and functional two-piece medical set with a V-neck top and drawstring pants. Made from breathable, lightweight fabrics for ease of movement during long shifts. Includes multiple pockets for carrying essentials.",
-    product_image: h1 ,
+    product_image: h9 ,
     product_price :300,
   },
   {
@@ -469,7 +476,7 @@ export const health =[
     product_id:303,
     product_name :"White Lab Coat ",
     product_Description: "Coat A professional, breathable coat designed for healthcare professionals. Tailored fit with a front button closure, structured collar, and side pockets for essential tools. Ideal for hospitals, clinics, and research facilities. ",
-    product_image: h5 ,
+    product_image: h10 ,
     product_price :200,
   },
   {
@@ -481,16 +488,16 @@ export const health =[
   },
   {
     product_id:305,
-    product_name :"health care and wellness",
+    product_name :"white medical coat",
     product_Description: "A professional white medical coat, often associated with doctors and healthcare professionals. The stethoscope around the neck adds to the authoritative and knowledgeable appearance",
-    product_image: h5,
+    product_image: h13,
     product_price :300,
   },
   {
     product_id:306,
-    product_name :"health care and wellness",
-    product_Description: ": Bright pink medical scrubs with a short-sleeved top and matching pants, presenting a clean and professional look. The scrubs are designed for comfort and practicality, allowing easy movement.",
-    product_image: h6,
+    product_name :"Bright pink medical scrubs",
+    product_Description: " Bright pink medical scrubs with a short-sleeved top and matching pants, presenting a clean and professional look. The scrubs are designed for comfort and practicality, allowing easy movement.",
+    product_image: h14,
     product_price :300,
   },
 ]
@@ -498,7 +505,7 @@ export const health =[
 export const normal =[
   {
     product_id:401,
-    product_name :"INDUSTRIAL yellow jaket",
+    product_name :"Industrial yellow jaket",
     product_Description: "High-visibility safety vest worn over a dark-colored polo shirt, paired with a white hard hat for head protection—typical of construction or industrial environments.",
     product_image: n1 ,
     product_price :300,
@@ -514,21 +521,21 @@ export const normal =[
     product_id:403,
     product_name :"orange jaket",
     product_Description: "Bright red industrial jacket over a checkered shirt, worn with protective yellow work gloves and a yellow safety helmet. He is also holding a pipe wrench, suggesting a trade profession.",
-    product_image: n3 ,
+    product_image: n4 ,
     product_price :300,
   },
   {
     product_id:404,
     product_name :"normal jaket light gray polo shirt",
     product_Description: "Light grey polo shirt under a bright neon green safety vest with reflective silver stripes. Worn with a blue hard hat and clear protective glasses.",
-    product_image: n4 ,
+    product_image: n7 ,
     product_price :300,
   },
   {
     product_id:405,
     product_name :"Heavy-Duty Denim Work Shirt",
     product_Description: "Durable and breathable denim shirt, ideal for workers in manufacturing units. Designed for long shifts and heavy-duty environments.",
-    product_image: n5 ,
+    product_image: n8 ,
     product_price :300,
   },
 ]
@@ -559,7 +566,7 @@ export const resto =[
     product_id:504,
     product_name :"Chef Jackets",
     product_Description: "Jackets Designed for professional kitchen environments, providing heat resistance and spill protection. Made from breathable, durable fabrics with a stand-up collar and optional pockets.",
-    product_image: r4 ,
+    product_image: r5 ,
     product_price :300,
   },
 ]
@@ -629,13 +636,6 @@ export const school =[
     product_name :"Light yellow shirt with thin vertical stripe",
     product_Description: "Adds a touch of texture and elegance while maintaining a professional look.",
     product_image: sc4 ,
-    product_price :300,
-  },
-  {
-    product_id:705,
-    product_name :"Classic color scheme",
-    product_Description: "The combination of a white shirt, grey vest, and striped tie gives a professional and polished look.",
-    product_image: sc5 ,
     product_price :300,
   },
 ]

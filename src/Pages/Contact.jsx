@@ -1,5 +1,6 @@
 import React from 'react';
 import contactbackground from "../assets/contactbackground.jpg";
+import { LuPhoneCall } from "react-icons/lu";
 
 const Contact = () => {
   return (
@@ -19,15 +20,15 @@ const Contact = () => {
           <div className="space-y-4">
             <div>
               <h3 className="text-lg font-semibold text-orange-400">Address</h3>
-              <p>SPCL Infotech, Warje, Pune, MH</p>
+              <p>Sr.No.41/3, 1st Floor, sindhu Govind Complex,Behind Shakun Tiles,Dattanagar, Pune - 411046</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-orange-400">Phone</h3>
-              <p>+00 123 649 87</p>
+              <p className="text-lg font-semibold text-white flex items-center gap-2"><LuPhoneCall  />+91 9922759640 || 91+9766091811 </p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-orange-400">Email</h3>
-              <p>Admin@MASafety.com</p>
+              <p>masafety8@gmail.com</p>
             </div>
           </div>
         </div>
