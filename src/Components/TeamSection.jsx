@@ -8,19 +8,19 @@ import { LuPhoneCall } from "react-icons/lu";
 
 const teamMembers = [
   {
-    name: "Amit Mahavir Patil",
-    role: "CEO / FOUNDER",
-    image: team2,
-    social: {
-      phoneNo: 9766091811,
-    },
-  },
-  {
     name: "Mahadev Waybase",
-    role: "Marketing Director",
+    role: "CEO / FOUNDER",
     image: team1,
     social: {
       phoneNo: 9922759640,
+    },
+  },
+  {
+    name: "Amit Mahavir Patil",
+    role: "Marketing Director",
+    image: team2,
+    social: {
+      phoneNo: 9766091811,
     },
   },
 ];
