@@ -9,10 +9,10 @@ import safetykit from "../assets/safety-kit.png";
 import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 
 const products = [
-  { id: 1, title: 'Solar Product Title 05', image: helmet },
-  { id: 2, title: 'Solar Product Title 02', image: shoes },
-  { id: 3, title: 'Solar Product Title 03', image: fireman },
-  { id: 4, title: 'Solar Product Title 04', image: safetykit },
+  { id: 1, title: 'Industrial Safety Helmet', image: helmet },
+  { id: 2, title: 'Steel Toe Safety Shoes', image: shoes },
+  { id: 3, title: 'Firefighter Protective Suit', image: fireman },
+  { id: 4, title: 'Complete Safety Kit', image: safetykit },
 ];
 
 export default function ProductCarousel() {
