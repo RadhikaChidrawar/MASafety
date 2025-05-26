@@ -416,14 +416,7 @@ export const denimShirt=[
     product_Description: "Durable and breathable denim shirt, ideal for workers in manufacturing units. Designed for long shifts and heavy-duty environments.",
     product_image: d5 ,
     product_price :300,
-  }, 
-  {
-    product_id:106,
-    product_name :"Industrial Safety Denim Shirt",
-    product_Description: "Engineered for comfort and safety, this denim shirt offers sturdy protection and flexibility for factory and machine operators.",
-    product_image : d6 ,
-    product_price : 350,
-  }, 
+  },  
   {
     product_id:107,
     product_name :"Classic Blue Denim Workwear",
@@ -431,13 +424,7 @@ export const denimShirt=[
     product_image : d7 ,
     product_price : 280,
   }, 
-  {
-    product_id:108,
-    product_name :"Reinforced Stitch Worker Shirt",
-    product_Description: "Features reinforced seams and thick denim material. Ideal for rugged use in warehouses and workshops.",
-    product_image : d8 ,
-    product_price:400,
-  }, 
+   
 ];
 
 export const corp =[
