@@ -190,116 +190,6 @@ const sampleData = [
     delivery_time: "2-4 Days",
     product_image: prod15,
   },
-  // {
-  //   product_id: 11,
-  //   product_name: "Crazy Horse Brown Leather Shoes (2727)",
-  //   product_Description:
-  //     "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
-  //   product_price: 1750,
-  //   product_star: 4.5,
-  //   delivery_time: "3-5 Days",
-  //   product_image: prod20,
-  // },
-  {
-    product_id: 12,
-    product_name: "Crazy Horse Green Leather Shoes (2728)",
-    product_Description:
-      "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
-    product_price: 1800,
-    product_star: 4.4,
-    delivery_time: "3-5 Days",
-    product_image: prod17,
-  },
-  {
-    product_id: 13,
-    product_name: "Buff Barton Leather Shoes - Electrical (602 E)",
-    product_Description:
-      "11 KVA electrical resistance, single density, anti-static, slip resistant, ISI Part-3, ISO 9001:2015 & CE certified.",
-    product_price: 1650,
-    product_star: 4.3,
-    delivery_time: "2-4 Days",
-    product_image: prod18,
-  },
-  {
-    product_id: 14,
-    product_name: "Buff Barton Leather Shoes - Nitrile Sole (602 N)",
-    product_Description:
-      "Steel toe 200J, single density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
-    product_price: 1700,
-    product_star: 4.4,
-    delivery_time: "2-4 Days",
-    product_image: prod19,
-  },
-  {
-    product_id: 15,
-    product_name: "Buff Barton Leather Shoes (701)",
-    product_Description:
-      "Steel toe 140J, single density, anti-static, slip resistant, ISI Part-3, ISO 9001:2015 & CE certified.",
-    product_price: 1600,
-    product_star: 4.1,
-    delivery_time: "3-5 Days",
-    product_image: prod20,
-  },
-  {
-    product_id: 16,
-    product_name: "Buff Barton Leather Shoes (2201)",
-    product_Description:
-      "Steel toe cap 140 joules, single density, anti-static, slip resistant, ISI Part-3, ISO 9001:2015 & CE certified.",
-    product_price: 1580,
-    product_star: 4.2,
-    delivery_time: "3-5 Days",
-    product_image: prod21,
-  },
-  {
-    product_id: 17,
-    product_name: "Grain Tango Leather Shoes (2450)",
-    product_Description:
-      "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
-    product_price: 1650,
-    product_star: 4.3,
-    delivery_time: "2-4 Days",
-    product_image: prod22,
-  },
-  {
-    product_id: 18,
-    product_name: "Buff Barton Leather Shoes (2453)",
-    product_Description:
-      "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
-    product_price: 1680,
-    product_star: 4.4,
-    delivery_time: "2-4 Days",
-    product_image: prod23,
-  },
-  {
-    product_id: 19,
-    product_name: "Grain Tango Brown Leather Shoes (2602)",
-    product_Description:
-      "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
-    product_price: 1700,
-    product_star: 4.4,
-    delivery_time: "3-5 Days",
-    product_image: prod24,
-  },
-  {
-    product_id: 20,
-    product_name: "C.G Leather Shoes (2610)",
-    product_Description:
-      "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
-    product_price: 1680,
-    product_star: 4.3,
-    delivery_time: "3-5 Days",
-    product_image: prod25,
-  },
-  {
-    product_id: 21,
-    product_name: "C.G Leather Shoes (2610)",
-    product_Description:
-      "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
-    product_price: 1680,
-    product_star: 4.3,
-    delivery_time: "3-5 Days",
-    product_image: prod23,
-  },
 ];
 
 export default sampleData;
@@ -759,3 +649,106 @@ export const vestProducts = [
     product_image: v3,
   },
 ];
+
+export const shoes =[
+  {
+    product_id: 12,
+    product_name: "Crazy Horse Green Leather Shoes (2728)",
+    product_Description:
+      "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
+    product_price: 1800,
+    product_star: 4.4,
+    delivery_time: "3-5 Days",
+    product_image: prod17,
+  },
+  {
+    product_id: 13,
+    product_name: "Buff Barton Leather Shoes - Electrical (602 E)",
+    product_Description:
+      "11 KVA electrical resistance, single density, anti-static, slip resistant, ISI Part-3, ISO 9001:2015 & CE certified.",
+    product_price: 1650,
+    product_star: 4.3,
+    delivery_time: "2-4 Days",
+    product_image: prod18,
+  },
+  {
+    product_id: 14,
+    product_name: "Buff Barton Leather Shoes - Nitrile Sole (602 N)",
+    product_Description:
+      "Steel toe 200J, single density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
+    product_price: 1700,
+    product_star: 4.4,
+    delivery_time: "2-4 Days",
+    product_image: prod19,
+  },
+  {
+    product_id: 15,
+    product_name: "Buff Barton Leather Shoes (701)",
+    product_Description:
+      "Steel toe 140J, single density, anti-static, slip resistant, ISI Part-3, ISO 9001:2015 & CE certified.",
+    product_price: 1600,
+    product_star: 4.1,
+    delivery_time: "3-5 Days",
+    product_image: prod20,
+  },
+  {
+    product_id: 16,
+    product_name: "Buff Barton Leather Shoes (2201)",
+    product_Description:
+      "Steel toe cap 140 joules, single density, anti-static, slip resistant, ISI Part-3, ISO 9001:2015 & CE certified.",
+    product_price: 1580,
+    product_star: 4.2,
+    delivery_time: "3-5 Days",
+    product_image: prod21,
+  },
+  {
+    product_id: 17,
+    product_name: "Grain Tango Leather Shoes (2450)",
+    product_Description:
+      "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
+    product_price: 1650,
+    product_star: 4.3,
+    delivery_time: "2-4 Days",
+    product_image: prod22,
+  },
+  {
+    product_id: 18,
+    product_name: "Buff Barton Leather Shoes (2453)",
+    product_Description:
+      "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
+    product_price: 1680,
+    product_star: 4.4,
+    delivery_time: "2-4 Days",
+    product_image: prod23,
+  },
+  {
+    product_id: 19,
+    product_name: "Grain Tango Brown Leather Shoes (2602)",
+    product_Description:
+      "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
+    product_price: 1700,
+    product_star: 4.4,
+    delivery_time: "3-5 Days",
+    product_image: prod24,
+  },
+  {
+    product_id: 20,
+    product_name: "C.G Leather Shoes (2610)",
+    product_Description:
+      "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
+    product_price: 1680,
+    product_star: 4.3,
+    delivery_time: "3-5 Days",
+    product_image: prod25,
+  },
+  {
+    product_id: 21,
+    product_name: "C.G Leather Shoes (2610)",
+    product_Description:
+      "Steel toe cap 200 joules, double density, anti-static, slip resistant, ISI Part-2, ISO 9001:2015 & CE certified.",
+    product_price: 1680,
+    product_star: 4.3,
+    delivery_time: "3-5 Days",
+    product_image: prod23,
+  },
+]

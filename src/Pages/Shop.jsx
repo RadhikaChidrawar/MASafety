@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import data from "../assets/mockData";
 import ProductCart from "../Components/ProductCart";
 import sampleData from "../assets/mockData";
+import { useNavigate } from "react-router-dom";
 import {
   denimShirt,
   corp,
@@ -10,6 +11,7 @@ import {
   resto,
   security,
   school,
+  shoes
 } from "../assets/mockData";
 
 // Combine product arrays
@@ -22,6 +24,7 @@ const allProduct = [
   ...resto,
   ...security,
   ...school,
+  ...shoes
 ];
 
 function Shop() {
@@ -52,3 +55,4 @@ function Shop() {
 }
 
 export default Shop;
+
