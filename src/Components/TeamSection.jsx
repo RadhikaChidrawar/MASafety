@@ -44,7 +44,7 @@ export default function TeamSection() {
             <span className="absolute bottom-0 left-0 w-full h-2 bg-blue-500 opacity-30 -z-0"></span>
           </h2>
           <p className="text-lg text-blue-100">
-            Meet the dedicated professionals who make Safety Wear exceptional
+            Meet the dedicated professionals who make <b> Safety Wear </b> exceptional for <b>You !</b>
           </p>
         </div>
 
