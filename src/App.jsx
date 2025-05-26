@@ -15,6 +15,7 @@ import Services from "./Pages/Services";
 import Shop from "./Pages/Shop";
 import Signin from "./Pages/Signin";
 import QuerySection from "./Components/QuerySection";
+import ProductDeatil from './Components/ProductDeatil'
 
 function App() {
   const currentRole = localStorage.getItem("userRole") || "accountAdmin";
@@ -33,6 +34,7 @@ function App() {
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/filter-data" element={<FilterData />} />
         <Route path="/query" element={<QuerySection />} />
+        <Route path="/product/:id" element={<ProductDeatil />} />
       
 
         <Route

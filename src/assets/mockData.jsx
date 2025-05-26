@@ -93,8 +93,6 @@ import v2 from './v2.jpeg'
 import v3 from './v3.jpeg'
 
 
-
-
 const sampleData = [
   {
     product_id: 1,

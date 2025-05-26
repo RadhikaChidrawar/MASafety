@@ -1,11 +1,28 @@
 import React, { useState } from "react";
-// import data from "../assets/mockData"; 
+// import data from "../assets/mockData";
 import ProductCart from "../Components/ProductCart";
-import sampleData from "../assets/mockData"; 
-import { denimShirt, corp, health, normal, resto, security, school } from "../assets/mockData";
+import sampleData from "../assets/mockData";
+import {
+  denimShirt,
+  corp,
+  health,
+  normal,
+  resto,
+  security,
+  school,
+} from "../assets/mockData";
 
 // Combine product arrays
-const allProduct = [...sampleData, ...denimShirt, ...corp, ...health, ...normal, ...resto, ...security, ...school];
+const allProduct = [
+  ...sampleData,
+  ...denimShirt,
+  ...corp,
+  ...health,
+  ...normal,
+  ...resto,
+  ...security,
+  ...school,
+];
 
 function Shop() {
   const categories = ["All", ...new Set(allProduct.map((p) => p.category))];

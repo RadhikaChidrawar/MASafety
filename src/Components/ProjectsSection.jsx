@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { 
+import {
   helmetProducts,
   glovesProducts,
   goggleProducts,
   maskProducts,
   vestProducts,
-} from '../assets/mockData';
+} from "../assets/mockData";
+import { useNavigate } from "react-router-dom";
 
 // Animation variants
 const container = {
@@ -14,27 +15,28 @@ const container = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1
-    }
-  }
+      staggerChildren: 0.1,
+    },
+  },
 };
 
 const item = {
   hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0 }
+  show: { opacity: 1, y: 0 },
 };
 
 export default function ProjectsSection() {
-  const categories = ["ALL", "HELMET", "GLOVES", "GOGGLE","MASK", "VEST"];
+  const categories = ["ALL", "HELMET", "GLOVES", "GOGGLE", "MASK", "VEST"];
   const [selectedCategory, setSelectedCategory] = useState("ALL");
+  const navigate = useNavigate();
 
   // Combine all projects data
   const allProjects = [
-    ...helmetProducts.map(item => ({ ...item, category: "HELMET" })),
-    ...glovesProducts.map(item => ({ ...item, category: "GLOVES" })),
-    ...goggleProducts.map(item => ({ ...item, category: "GOGGLE" })),
-    ...maskProducts.map(item => ({ ...item, category: "MASK" })),
-    ...vestProducts.map(item => ({ ...item, category: "VEST" })),
+    ...helmetProducts.map((item) => ({ ...item, category: "HELMET" })),
+    ...glovesProducts.map((item) => ({ ...item, category: "GLOVES" })),
+    ...goggleProducts.map((item) => ({ ...item, category: "GOGGLE" })),
+    ...maskProducts.map((item) => ({ ...item, category: "MASK" })),
+    ...vestProducts.map((item) => ({ ...item, category: "VEST" })),
   ];
 
   const filteredProjects =
@@ -53,7 +55,8 @@ export default function ProjectsSection() {
           <span className="absolute h-1 w-full bg-gradient-to-r from-orange-400 to-orange-600 bottom-3 left-0 -z-0"></span>
         </h2>
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-          Explore our diverse range of projects across various industries and sectors.
+          Explore our diverse range of projects across various industries and
+          sectors.
         </p>
       </div>
 
@@ -71,7 +74,7 @@ export default function ProjectsSection() {
           >
             {category}
             {selectedCategory === category && (
-              <motion.span 
+              <motion.span
                 layoutId="categoryIndicator"
                 className="absolute inset-0 border-2 border-orange-400 rounded-full"
                 initial={false}
@@ -104,16 +107,23 @@ export default function ProjectsSection() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              
+
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                 <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                   <span className="inline-block px-3 py-1 mb-2 text-xs font-semibold text-orange-300 bg-black/30 rounded-full backdrop-blur-sm">
                     {project.category}
                   </span>
-                  <h3 className="text-white font-bold text-xl mb-1 line-clamp-1">{project.product_name}</h3>
-                  <p className="text-gray-300 text-sm mb-3 line-clamp-2">{project.product_Description}</p>
+                  <h3 className="text-white font-bold text-xl mb-1 line-clamp-1">
+                    {project.product_name}
+                  </h3>
+                  <p className="text-gray-300 text-sm mb-3 line-clamp-2">
+                    {project.product_Description}
+                  </p>
                   <div className="flex justify-between items-center">
-                    <button className="text-white bg-orange-500 hover:bg-orange-600 px-4 py-1 rounded-full text-sm font-medium transition-colors">
+                    <button
+                      onClick={() => navigate(`/product/${project.product_id}`)}
+                      className="text-white bg-orange-500 hover:bg-orange-600 px-4 py-1 rounded-full text-sm font-medium transition-colors"
+                    >
                       View Details
                     </button>
                   </div>
@@ -125,8 +135,12 @@ export default function ProjectsSection() {
       ) : (
         <div className="text-center py-20">
           <div className="text-gray-400 text-5xl mb-4">😕</div>
-          <h3 className="text-xl font-medium text-gray-600 mb-2">No projects found</h3>
-          <p className="text-gray-500">We couldn't find any projects in this category</p>
+          <h3 className="text-xl font-medium text-gray-600 mb-2">
+            No projects found
+          </h3>
+          <p className="text-gray-500">
+            We couldn't find any projects in this category
+          </p>
         </div>
       )}
 
