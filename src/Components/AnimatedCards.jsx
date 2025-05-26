@@ -1,16 +1,31 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import ConstructionIcon from '@mui/icons-material/Construction';
-import AddModeratorIcon from '@mui/icons-material/AddModerator';
-import AddHomeWorkIcon from '@mui/icons-material/AddHomeWork';
+import shoes from "../assets/sho11.png";
+import uni from "../assets/uni.png";
+import saf from "../assets/saf1.png";
 
 const AnimatedCards = () => {
-  const [clickedIndex, setClickedIndex] = useState(null); // Track which card is clicked
+  const [clickedIndex, setClickedIndex] = useState(null); 
 
   const cards = [
-    { title: "COMMERCIAL EQUIPMENT", icon: <ConstructionIcon fontSize="large"/> },
-    { title: "INNOVATION & RESEARCH", icon:<AddModeratorIcon fontSize="large"/> },
-    { title: "HOME APPLIANCE", icon: <AddHomeWorkIcon fontSize="large"/> },
+    {
+      title: "Safety Equipment",
+      icon: saf,
+      type: "image",
+      des: "Stay protected on the job with our high-quality safety equipment. From helmets to gloves, we provide gear that ensures maximum safety and comfort in hazardous environments.",
+    },
+    {
+      title: "Safety Shoes",
+      icon: shoes,
+      type: "image",
+      des: "Step into safety with our durable and certified safety shoes. Designed to protect your feet from impact, punctures, and slips — ideal for industrial and construction use.",
+    },
+    {
+      title: " Safety Uniforms",
+      icon: uni,
+      type: "image",
+      des: "Professional and protective workwear tailored for all industries. Our safety uniforms combine durability, comfort, and visibility to keep your team secure and smart-looking.",
+    },
   ];
 
   return (
@@ -21,22 +36,25 @@ const AnimatedCards = () => {
           className="w-full md:w-96 p-6 rounded-lg text-center text-white bg-blue-900 shadow-xl cursor-pointer"
           whileHover={{ scale: 1.05, backgroundColor: "#FF5733" }}
           transition={{ duration: 0.3 }}
-          onClick={() =>
-            setClickedIndex(clickedIndex === index ? null : index)
-          }
+          onClick={() => setClickedIndex(clickedIndex === index ? null : index)}
         >
           <motion.div
-            className="text-5xl mb-4"
+            className="text-5xl mb-4 flex justify-center"
             animate={clickedIndex === index ? { rotate: 360 } : { rotate: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
-            {item.icon}
+            {item.type === "component" ? (
+              item.icon
+            ) : (
+              <img
+                src={item.icon}
+                alt={item.title}
+                className="w-16 h-16 object-contain filter invert brightness-0"
+              />
+            )}
           </motion.div>
           <h3 className="text-xl font-bold">{item.title}</h3>
-          <p className="text-base mt-3">
-            Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut
-            libero venenatis faucibus.
-          </p>
+          <p className="text-base mt-3">{item.des}</p>
         </motion.div>
       ))}
     </div>
