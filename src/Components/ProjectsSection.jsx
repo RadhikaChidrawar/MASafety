@@ -1,5 +1,4 @@
 import { useState } from "react";
-import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 import { motion } from "framer-motion";
 import { 
   helmetProducts,
@@ -49,7 +48,7 @@ export default function ProjectsSection() {
       <div className="text-center mb-12 relative">
         <h2 className="text-4xl font-bold text-gray-800 relative inline-block">
           <span className="relative z-10 px-4 bg-white">
-            OUR INCREDIBLE PROJECTS
+            OUR INCREDIBLE PRODUCTS
           </span>
           <span className="absolute h-1 w-full bg-gradient-to-r from-orange-400 to-orange-600 bottom-3 left-0 -z-0"></span>
         </h2>
@@ -114,7 +113,6 @@ export default function ProjectsSection() {
                   <h3 className="text-white font-bold text-xl mb-1 line-clamp-1">{project.product_name}</h3>
                   <p className="text-gray-300 text-sm mb-3 line-clamp-2">{project.product_Description}</p>
                   <div className="flex justify-between items-center">
-                    {/* <span className="text-orange-400 font-bold text-lg">₹{project.product_price}</span> */}
                     <button className="text-white bg-orange-500 hover:bg-orange-600 px-4 py-1 rounded-full text-sm font-medium transition-colors">
                       View Details
                     </button>

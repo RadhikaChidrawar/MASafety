@@ -4,13 +4,37 @@ import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 
 export default function WhyChooseUs() {
   const features = [
-    { title: "Why Choose Title 01", icon: <Star />, description: "Maecenas nec odio et ante tincidunt tempus." },
-    { title: "Why Choose Title 02", icon: <Heart />, description: "Donec vitae sapien ut libero venenatis faucibus." },
-    { title: "Why Choose Title 03", icon: <Gem />, description: "Maecenas nec odio et ante tincidunt tempus." },
-    { title: "Why Choose Title 04", icon: <Shield />, description: "Donec vitae sapien ut libero venenatis faucibus." },
-    { title: "Why Choose Title 05", icon: <Umbrella />, description: "Maecenas nec odio et ante tincidunt tempus." },
-    { title: "Why Choose Title 06", icon: <Triangle />, description: "Donec vitae sapien ut libero venenatis faucibus." },
-  ];
+  {
+    title: "Trusted Quality",
+    icon: <Star />,
+    description: "We deliver only top-tier safety products tested and certified for reliability in the most demanding environments."
+  },
+  {
+    title: "Customer Satisfaction",
+    icon: <Heart />,
+    description: "Our commitment to customer care means you get the best support, fast responses, and smooth service."
+  },
+  {
+    title: "Premium Materials",
+    icon: <Gem />,
+    description: "We use high-grade materials to ensure our gear offers long-lasting protection and comfort."
+  },
+  {
+    title: "Certified Safety Standards",
+    icon: <Shield />,
+    description: "All products meet or exceed industry safety regulations to keep your workforce secure and compliant."
+  },
+  {
+    title: "All-Weather Protection",
+    icon: <Umbrella />,
+    description: "Our equipment performs in all conditions — rain, heat, or dust — ensuring 24/7 protection."
+  },
+  {
+    title: "Innovative Design",
+    icon: <Triangle />,
+    description: "We combine functionality with modern design to deliver safety gear that’s both practical and professional."
+  },
+];
 
   return (
     <section className="px-6 py-10 text-center">
