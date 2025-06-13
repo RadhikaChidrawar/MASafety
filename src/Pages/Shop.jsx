@@ -4,7 +4,7 @@ import ProductCart from "../Components/ProductCart";
 import sampleData from "../assets/mockData";
 import { useNavigate } from "react-router-dom";
 import {
-  denimShirt,
+  // denimShirt,
   corp,
   health,
   normal,
@@ -17,7 +17,7 @@ import {
 // Combine product arrays
 const allProduct = [
   ...sampleData,
-  ...denimShirt,
+  // ...denimShirt,
   ...corp,
   ...health,
   ...normal,

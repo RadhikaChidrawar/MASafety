@@ -8,11 +8,19 @@ import fireman from "../assets/fireman.png";
 import safetykit from "../assets/safety-kit.png";
 import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 
+// new shoes img
+import prod17 from "../assets/Shoe3.png" //"./Shoe3.png";
+import prod18 from "../assets/shoes.png"//"./shoes.png";
+import prod19 from "../assets/shoes5.png"//"./shoes5.png";
+import prod20 from "../assets/shos6.png"//"./shos6.png";
+
 const products = [
   { id: 1, title: 'Industrial Safety Helmet', image: helmet },
   { id: 2, title: 'Steel Toe Safety Shoes', image: shoes },
-  { id: 3, title: 'Firefighter Protective Suit', image: fireman },
-  { id: 4, title: 'Complete Safety Kit', image: safetykit },
+  { id: 3, title: 'Crazy Horse Green Leather Shoes', image: prod17 },
+  { id: 4, title: 'Buff Barton Leather Shoes', image: prod18 },
+  { id: 5, title: 'Buff Barton Leather Shoes - Nitrile Sole', image: prod19 },
+  { id: 6, title: 'Buff Barton Leather Shoes (701)', image: prod20 },
 ];
 
 export default function ProductCarousel() {

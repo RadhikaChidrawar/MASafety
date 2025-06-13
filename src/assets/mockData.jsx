@@ -269,51 +269,51 @@ export const blogs = [
   },
 ];
 
-export const denimShirt=[
-  {
-    product_id:101,
-    product_name :"Heavy-Duty Denim Work Shirt",
-    product_Description: "Durable and breathable denim shirt, ideal for workers in manufacturing units. Designed for long shifts and heavy-duty environments.",
-    product_image: d1 ,
-    product_price :300,
-  }, 
-  {
-    product_id:102,
-    product_name :"Industrial Safety Denim Shirt",
-    product_Description: "Engineered for comfort and safety, this denim shirt offers sturdy protection and flexibility for factory and machine operators.",
-    product_image : d2 ,
-    product_price : 350,
-  }, 
-  {
-    product_id:103,
-    product_name :"Classic Blue Denim Workwear",
-    product_Description: "A timeless blue denim shirt perfect for workers handling machinery and tools in industrial settings.",
-    product_image : d3 ,
-    product_price : 280,
-  }, 
-  {
-    product_id:104,
-    product_name :"Reinforced Stitch Worker Shirt",
-    product_Description: "Features reinforced seams and thick denim material. Ideal for rugged use in warehouses and workshops.",
-    product_image : d4 ,
-    product_price:400,
-  }, 
-  {
-    product_id:105,
-    product_name :"Heavy-Duty Denim Work Shirt",
-    product_Description: "Durable and breathable denim shirt, ideal for workers in manufacturing units. Designed for long shifts and heavy-duty environments.",
-    product_image: d5 ,
-    product_price :300,
-  },  
-  {
-    product_id:107,
-    product_name :"Classic Blue Denim Workwear",
-    product_Description: "A timeless blue denim shirt perfect for workers handling machinery and tools in industrial settings.",
-    product_image : d7 ,
-    product_price : 280,
-  }, 
+// export const denimShirt=[
+//   {
+//     product_id:101,
+//     product_name :"Heavy-Duty Denim Work Shirt",
+//     product_Description: "Durable and breathable denim shirt, ideal for workers in manufacturing units. Designed for long shifts and heavy-duty environments.",
+//     product_image: d1 ,
+//     product_price :300,
+//   }, 
+//   {
+//     product_id:102,
+//     product_name :"Industrial Safety Denim Shirt",
+//     product_Description: "Engineered for comfort and safety, this denim shirt offers sturdy protection and flexibility for factory and machine operators.",
+//     product_image : d2 ,
+//     product_price : 350,
+//   }, 
+//   {
+//     product_id:103,
+//     product_name :"Classic Blue Denim Workwear",
+//     product_Description: "A timeless blue denim shirt perfect for workers handling machinery and tools in industrial settings.",
+//     product_image : d3 ,
+//     product_price : 280,
+//   }, 
+//   {
+//     product_id:104,
+//     product_name :"Reinforced Stitch Worker Shirt",
+//     product_Description: "Features reinforced seams and thick denim material. Ideal for rugged use in warehouses and workshops.",
+//     product_image : d4 ,
+//     product_price:400,
+//   }, 
+//   {
+//     product_id:105,
+//     product_name :"Heavy-Duty Denim Work Shirt",
+//     product_Description: "Durable and breathable denim shirt, ideal for workers in manufacturing units. Designed for long shifts and heavy-duty environments.",
+//     product_image: d5 ,
+//     product_price :300,
+//   },  
+//   {
+//     product_id:107,
+//     product_name :"Classic Blue Denim Workwear",
+//     product_Description: "A timeless blue denim shirt perfect for workers handling machinery and tools in industrial settings.",
+//     product_image : d7 ,
+//     product_price : 280,
+//   }, 
    
-];
+// ];
 
 export const corp =[
   {
@@ -392,13 +392,13 @@ export const normal =[
     product_image: n2 ,
     product_price :1200,
   },
-  {
-    product_id:403,
-    product_name :"orange jaket",
-    product_Description: "Bright red industrial jacket over a checkered shirt, worn with protective yellow work gloves and a yellow safety helmet. He is also holding a pipe wrench, suggesting a trade profession.",
-    product_image: n4 ,
-    product_price :300,
-  },
+  // {
+  //   product_id:403,
+  //   product_name :"orange jaket",
+  //   product_Description: "Bright red industrial jacket over a checkered shirt, worn with protective yellow work gloves and a yellow safety helmet. He is also holding a pipe wrench, suggesting a trade profession.",
+  //   product_image: n4 ,
+  //   product_price :300,
+  // },
   {
     product_id:404,
     product_name :"normal jaket light gray polo shirt",
@@ -416,13 +416,13 @@ export const normal =[
 ]
 
 export const resto =[
-  {
-    product_id:501,
-    product_name :"Bib Apron",
-    product_Description: "Bib Apron Designed for chefs and restaurant staff, offering full coverage and practical storage. Made from durable, easy-care fabrics with adjustable straps for a secure fit. ",
-    product_image: r1 ,
-    product_price :300,
-  },
+  // {
+  //   product_id:501,
+  //   product_name :"Bib Apron",
+  //   product_Description: "Bib Apron Designed for chefs and restaurant staff, offering full coverage and practical storage. Made from durable, easy-care fabrics with adjustable straps for a secure fit. ",
+  //   product_image: r1 ,
+  //   product_price :300,
+  // },
   {
     product_id:502,
     product_name :"WEST APRON",
@@ -632,14 +632,14 @@ export const vestProducts = [
     product_price: 250,
     product_image: v1,
   },
-  {
-    product_id: 14,
-    product_name: "Mesh Safety Vest",
-    product_Description:
-      "Lightweight mesh vest with front zipper and reflective tape for breathability and visibility.",
-    product_price: 200,
-    product_image: v2,
-  },
+  // {
+  //   product_id: 14,
+  //   product_name: "Mesh Safety Vest",
+  //   product_Description:
+  //     "Lightweight mesh vest with front zipper and reflective tape for breathability and visibility.",
+  //   product_price: 200,
+  //   product_image: v2,
+  // },
   {
     product_id: 15,
     product_name: "Multi-Pocket Safety Vest",
