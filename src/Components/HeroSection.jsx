@@ -36,22 +36,6 @@ export default function HeroSection() {
           ensure a secure and risk-free environment. Choose the best safety
           equipment for a safer tomorrow.
         </p>
-
-        {/* Buttons */}
-        {/* <div className="mt-6 flex flex-col sm:flex-row items-center gap-4 justify-center space-x-4">
-          <button
-            className="bg-red-600 flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-lg sm:text-lg shadow-lg 
-                        hover:bg-red-700 transition-transform transform hover:scale-105"
-          >
-            <FaCompass /> Discover Now
-          </button>
-          <button
-            className="bg-orange-500 flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-base sm:text-lg shadow-lg 
-                        hover:bg-orange-600 transition-transform transform hover:scale-105"
-          >
-            < FlagCircleIcon /> Go Safe
-          </button>
-        </div> */}
       </div>
     </section>
   );   

@@ -14,7 +14,6 @@ import Projects from "./Pages/Projects";
 import Services from "./Pages/Services";
 import Shop from "./Pages/Shop";
 import Signin from "./Pages/Signin";
-import QuerySection from "./Components/QuerySection";
 import ProductDeatil from './Components/ProductDeatil'
 
 function App() {
@@ -33,7 +32,6 @@ function App() {
         <Route path="/buynow" element={<Buynow />} />
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/filter-data" element={<FilterData />} />
-        <Route path="/query" element={<QuerySection />} />
         <Route path="/product/:id" element={<ProductDeatil />} />
       
 

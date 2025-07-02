@@ -19,10 +19,9 @@ export default function Home() {
       <WhyChooseUs />
       <TeamSection />
 
-      {/* Sticky "Ask Any Question" Button */}
       <button
         className="fixed bottom-5 right-5 bg-orange-600 text-white px-5 py-3 rounded-full shadow-lg hover:bg-orange-700 transition z-50"
-        onClick={() =>  Navigate("/query")}
+        onClick={() =>  Navigate("/Contact")}
       >
         Ask Any Question
       </button>

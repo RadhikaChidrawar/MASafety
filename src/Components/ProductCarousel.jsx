@@ -9,10 +9,10 @@ import safetykit from "../assets/safety-kit.png";
 import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 
 // new shoes img
-import prod17 from "../assets/Shoe3.png" //"./Shoe3.png";
-import prod18 from "../assets/shoes.png"//"./shoes.png";
-import prod19 from "../assets/shoes5.png"//"./shoes5.png";
-import prod20 from "../assets/shos6.png"//"./shos6.png";
+import prod17 from "../assets/Shoe3.png" 
+import prod18 from "../assets/shoes.png"
+import prod19 from "../assets/shoes5.png"
+import prod20 from "../assets/shos6.png"
 
 const products = [
   { id: 1, title: 'Industrial Safety Helmet', image: helmet },

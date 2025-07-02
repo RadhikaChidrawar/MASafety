@@ -217,13 +217,6 @@ export default function Header() {
           >
             <FaShop /> Shop
           </Link>
-          {/* <Link
-            to="/profile"
-            className="flex items-center gap-2 text-white hover:text-orange-400 transition-all duration-300 py-2"
-            onClick={() => setMenuOpen(false)}
-          >
-            <IoPersonCircleSharp />Profile
-          </Link> */}
           <Link
             to="/contact"
             className="flex items-center gap-2 text-white hover:text-orange-400 transition-all duration-300 py-2"

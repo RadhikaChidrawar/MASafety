@@ -55,27 +55,6 @@ function Buynow() {
 
                     <div className="flex items-center justify-between w-full md:w-3/5 gap-4 text-sm">
                       <p>₹{product.product_price}</p>
-
-                      {/* <div className="flex items-center border rounded">
-                        <button
-                          className="px-2 font-bold border-r"
-                          onClick={() =>
-                            dispatch(decressQuentity(product.product_id))
-                          }
-                        >
-                          -
-                        </button>
-                        <p className="px-3">{product.quantity}</p>
-                        <button
-                          className="px-2 border-l"
-                          onClick={() =>
-                            dispatch(incressQuentity(product.product_id))
-                          }
-                        >
-                          +
-                        </button>
-                      </div> */}
-
                       {/* custom quentity */}
                       <input
                         type="number"
@@ -157,10 +136,9 @@ function Buynow() {
       ) : (
         <div className="flex flex-col items-center justify-center">
           <img src={empty} alt="Empty cart" className="h-96 mb-6" />
-          {/* <p className="text-lg font-medium mb-4">Your cart is empty!</p> */}
           <button
             className="bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600"
-            onClick={() => navigate("/shop")} // Change '/shop' to your actual shop route
+            onClick={() => navigate("/shop")} 
           >
             Shop Now
           </button>

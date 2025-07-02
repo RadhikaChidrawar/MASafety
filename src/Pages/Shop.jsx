@@ -17,7 +17,6 @@ import {
 // Combine product arrays
 const allProduct = [
   ...sampleData,
-  // ...denimShirt,
   ...corp,
   ...health,
   ...normal,
