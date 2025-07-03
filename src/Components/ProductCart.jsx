@@ -20,7 +20,7 @@ const ProductCart = ({ product }) => {
   };
 
   return (
-    <div className="bg-white p-4 shadow rounded-lg border relative transform transition-transform duration-300 hover:scale-105 w-full max-w-xs mx-auto">
+    <div className="bg-white p-4 shadow rounded-lg border relative transform transition-transform duration-300 hover:scale-105 w-full max-w-xs mx-auto cursor-default">
       <img
         src={product.product_image}
         alt={product.product_name}
@@ -36,20 +36,21 @@ const ProductCart = ({ product }) => {
       </p>
 
       <div className="flex items-center mb-1 text-orange-500">
-        {Array(Number.isInteger(product.product_star)&& product.product_star > 0 ? product.product_star : 0)
+        {Array(
+          Number.isInteger(product.product_star) && product.product_star > 0
+            ? product.product_star
+            : 0
+        )
           .fill()
           .map((_, index) => (
             <FaStar key={index} size={16} />
           ))}
       </div>
       <div
-        className="absolute bottom-4 right-2 flex items-center justify-center w-8 h-8 bg-orange-600 group text-white text-sm rounded-full hover:w-28 sm:hover:w-32 hover:bg-orange-700 transition-all cursor-pointer"
+        className="absolute bottom-4 right-2 w-8 h-8 bg-orange-600 text-white text-sm rounded-full flex items-center justify-center hover:bg-orange-700 transition-colors cursor-pointer"
         onClick={(e) => handleAddToCart(e, product)}
       >
-        <span className="group-hover:hidden">+</span>
-        <span className="hidden group-hover:block text-xs sm:text-sm">
-          Add Bulk Order
-        </span>
+        +
       </div>
     </div>
   );
