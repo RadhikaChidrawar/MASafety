@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Signin = () => {
   const [state, setState] = useState("Sign Up"); // toggles between login and signup
@@ -64,6 +66,7 @@ const Signin = () => {
       localStorage.setItem("userData", JSON.stringify(userData));
 
       console.log("User Registered!", userData);
+      toast.success("Signup successful! Please login now.");
       setState("Login"); // Switch to login after signup
       return;
     }
@@ -71,8 +74,14 @@ const Signin = () => {
     // Login flow
     if (adminCredentials[email]) {
       if (password === adminCredentials[email].password) {
+        localStorage.setItem(
+          "user",
+          JSON.stringify({ email, role: adminCredentials[email].role })
+        );
         localStorage.setItem("userRole", adminCredentials[email].role);
         navigate(adminCredentials[email].redirect);
+        toast.success("Admin login successful!");
+        window.location.reload();
         return;
       } else {
         setError("Invalid password for admin account");
@@ -87,8 +96,14 @@ const Signin = () => {
       storedUser.email === email &&
       storedUser.password === password
     ) {
+      localStorage.setItem("user", JSON.stringify(storedUser));
       localStorage.setItem("userRole", "user");
-      navigate("/", { state: { message: "Login successful!" } });
+      toast.success("Login successful!");
+      
+      setTimeout(() => {
+        navigate("/", { state: { message: "Login successful!" } });
+        window.location.reload(); // ✅ delay this so toast shows
+      }, 1500);
     } else {
       setError("Invalid credentials. Please try again.");
     }
@@ -104,7 +119,8 @@ const Signin = () => {
           {state === "Sign Up" ? "Create Account" : "Login"}
         </h2>
         <p className="text-sm mb-4 text-gray-500">
-          Please {state === "Sign Up" ? "sign up" : "log in"} to access the site.
+          Please {state === "Sign Up" ? "sign up" : "log in"} to access the
+          site.
         </p>
 
         {error && (

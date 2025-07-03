@@ -15,7 +15,7 @@ import Services from "./Pages/Services";
 import Shop from "./Pages/Shop";
 import Signin from "./Pages/Signin";
 import ProductDeatil from './Components/ProductDeatil'
-
+import Profile from "./Pages/Profile";
 function App() {
   const currentRole = localStorage.getItem("userRole") || "accountAdmin";
   return (
@@ -33,6 +33,8 @@ function App() {
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/filter-data" element={<FilterData />} />
         <Route path="/product/:id" element={<ProductDeatil />} />
+        <Route path="/pofile" element={<Profile />} />
+
       
 
         <Route
