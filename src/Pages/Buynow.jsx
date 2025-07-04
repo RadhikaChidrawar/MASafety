@@ -17,6 +17,16 @@ function Buynow() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const navigate = useNavigate();
 
+  const handleCheckout = () => {
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    if (!user) {
+      navigate("/signin", { state: { from: "/checkout" } }); 
+    } else{
+      navigate("/checkout"); 
+    }
+  };
+
   return (
     <div className="container mx-auto py-8 px-4 min-h-96">
       {cart.products.length > 0 ? (
@@ -126,7 +136,7 @@ function Buynow() {
 
               <button
                 className="w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600"
-                onClick={() => navigate("/checkout")}
+                onClick={handleCheckout}
               >
                 Proceed to Checkout
               </button>
@@ -138,7 +148,7 @@ function Buynow() {
           <img src={empty} alt="Empty cart" className="h-96 mb-6" />
           <button
             className="bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600"
-            onClick={() => navigate("/shop")} 
+            onClick={() => navigate("/shop")}
           >
             Shop Now
           </button>

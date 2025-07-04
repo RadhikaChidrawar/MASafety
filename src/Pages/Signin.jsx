@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -12,7 +12,9 @@ const Signin = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
 
+  const location = useLocation();
   const navigate = useNavigate();
+  
 
   // Admin credentials for login check
   const adminCredentials = {
@@ -67,7 +69,7 @@ const Signin = () => {
 
       console.log("User Registered!", userData);
       toast.success("Signup successful! Please login now.");
-      setState("Login"); // Switch to login after signup
+      setState("Login"); 
       return;
     }
 
@@ -100,9 +102,10 @@ const Signin = () => {
       localStorage.setItem("userRole", "user");
       toast.success("Login successful!");
       
+      const from = location.state?.from || "/";
       setTimeout(() => {
-        navigate("/", { state: { message: "Login successful!" } });
-        window.location.reload(); // ✅ delay this so toast shows
+        navigate(from);
+        window.location.reload(); 
       }, 1500);
     } else {
       setError("Invalid credentials. Please try again.");
