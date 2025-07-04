@@ -3,8 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import empty from "../assets/123safety.jpg";
 import { FaTrashAlt } from "react-icons/fa";
 import {
-  decressQuentity,
-  incressQuentity,
   removeFromCart,
   updateQuantity,
 } from "../redux/cartSlice";
@@ -97,10 +95,9 @@ function Buynow() {
                   </div>
                 ))}
               </div>
-              {/* <button className="w-30 bg-orange-500 text-white py-2 rounded hover:bg-orange-600">Inquery</button> */}
               <button
-                className="w-30 bg-orange-500 text-white py-2 rounded hover:bg-orange-600"
-                onClick={() => navigate("/inquiry")}
+                className=" bg-orange-500 text-white px-6 mt-4 ml-4 p-2 rounded hover:bg-orange-600 transition"
+                onClick={() => navigate("/contact")}
               >
                 Inquiry
               </button>
